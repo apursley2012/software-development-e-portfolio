@@ -26,62 +26,37 @@
   <style>
    
     body {
-      visibility: hidden; /* Hide content until typing starts */
+      visibility: visible; 
     }
 
     .terminal-window,
     .markdown-content,
     .terminal-header,
     .status-bar {
-      visibility: hidden;
+      visibility: visible;
     }
   </style>
 
-  <script>
-    function openPage(pageName) {
-            // Navigate to the specified page
-            window.location.href = pageName + '.html';
-        }
-    document.addEventListener("DOMContentLoaded", () => {
-      const elementsToType = document.querySelectorAll(".type-sequence");
-      const delay = 30; // milliseconds per character
-      let globalIndex = 0;
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const target = document.getElementById("typed-text");
+    if (!target) return;
 
-      function typeElement(el, callback) {
-        const text = el.dataset.text;
-        el.textContent = "";
-        let i = 0;
-        const interval = setInterval(() => {
-          if (i < text.length) {
-            el.textContent += text.charAt(i);
-            i++;
-          } else {
-            clearInterval(interval);
-            if (callback) callback();
-          }
-        }, delay);
+    const originalText = target.textContent.trim();
+    target.textContent = "";
+
+    let i = 0;
+    function typeChar() {
+      if (i < originalText.length) {
+        target.textContent += originalText.charAt(i);
+        i++;
+        setTimeout(typeChar, 60);
       }
+    }
 
-      function revealAndType(index) {
-        if (index >= elementsToType.length) return;
-        const el = elementsToType[index];
-        el.style.visibility = "visible";
-        typeElement(el, () => {
-          revealAndType(index + 1);
-        });
-      }
-
-      // Start typing after small delay
-      setTimeout(() => {
-        document.body.style.visibility = "visible";
-
-        document.querySelectorAll(".terminal-window, .markdown-content, .terminal-header, .status-bar")
-          .forEach(el => el.style.visibility = "visible");
-
-        revealAndType(0);
-      }, 500);
-    });
-  </script>
+    typeChar();
+  });
+</script>
 </head>
 
 <body>
