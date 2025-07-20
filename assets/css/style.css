@@ -23,8 +23,8 @@ main {
 }
 
 h1 {
-  font-family:  'Extrude', 'Press Start 2P', 'Rampart One', 'Silkscreen', 'Tektur';
-  font-size: 30px;
+  font-family: 'Press Start 2P', 'Rampart One', 'Silkscreen', 'Tektur';
+  font-size: 48px;
   -webkit-text-fill-color: #33ff00;
   -webkit-text-stroke: 1px #000000;
   color: #33ff00;
@@ -33,28 +33,10 @@ h1 {
       0 0 8px #2bd852,         /* Gentle glow */
     1px 1px 5px #a9a9a9,     /* Soft shadow bottom-right */
     -1px -1px 5px #3a3a3a;   
-    /*
-     -1px -1px 0 #000000,  
-      1px -1px 0 #000000,
-      -1px 1px 0 #000000,
-       1px 1px 0 #000000,
-      0 0 5px #66ff00,         /* green glow *
-      0 0 7.5px #00ff00;           /* stronger green glow */
   margin-bottom: 1.5rem;
   text-align: center; 
 }
-/*
-.glow-text {
-  color: #f4ffe0;
-  text-shadow:
-    0 0 2px #00ff00,
-    0 0 6px #00ff00,
-    1.5px 1.5px 3px #333333,
-    2px 2px 4px #000000,
-    -1px -1px 1px #444444;
-  margin-bottom: 1.5rem;
-}
-*/
+ 
 h2 {
   font-family: 'Share Tech Mono', 'Extrude','Tourney','Static','SixtyFour', 'Audiowide','Press Start 2P', monospace;
   color: #f0fff8;
@@ -91,7 +73,6 @@ p {
   background-color: #d8d9da;
   padding: 2.5px;
   margin: 32px;
-  /*border: 4px outset #d8d9da;*/
   max-width: 900px;
   cursor: pointer;
   font-family: 'Share Tech Mono', monospace;
@@ -99,24 +80,7 @@ p {
   border-left: 2px outset #ffffff;
   border-right: 2px outset #404040;
   border-bottom: 2px outset #404040;
-  /* box-shadow:
-    /* right shadow *
-    2px 0 0px #505050,    
-    /* left highlight *
-    -2px 0 0px #ffffff,   
-    /* bottom shadow *
-    0 2px 0px #505050,    
-    /* top highlight *
-    0 -2px 0px #ffffff;
-      /* right inset shadow *
-      inset 2px 0px 0px #505059,
-      /* left inset highlight *
-      inset px -2px 0px #ffffff,
-      /* bottom inset highlight *
-      inset 0px 2px 0px #ffffff,
-      /* upper inset shadow *
-      inset px -2px 0px #505050;*/
-  }
+ }
   
 .terminal-window:hover {
   border: 5px solid #303030;
@@ -136,28 +100,10 @@ p {
   border-left: 2px inset #ffffff; 
   border-right: 2px inset #404040;
   border-bottom: 2px inset #404040;
-  /*box-shadow:
-    /* right shadow *
-    2px 0 0px #ffffff,    
-    /* left highlight *
-    -2px 0 0px #303030,   
-    /* bottom shadow *
-    0 2px 0px #ffffff,    
-    /* top highlight *
-    0 -2px 0px #303030;
-      /* right inset shadow *
-      inset 2px 0px 0px #ffffff,
-      /* left inset highlight *
-      inset px -2px 0px #303030,
-      /* bottom inset highlight *
-      inset 0px 2px 0px #303030,
-      /* upper inset shadow *
-      inset px -2px 0px #ffffff;*/
   }
 
 .terminal-buttons {
   display: flex;
-  gap: 0.01rem;
 }
 
 .terminal-button {
@@ -166,7 +112,7 @@ p {
   border-top: 2px outset #fefefe;
   border-left: 2px outset #fefefefe;
   border-right: 2px outset #505050;
-  border-bottom: 2px outset #505050
+  border-bottom: 2px outset #505050;
   background-color: #d8d9da;
   font-size: 0.6rem;
   display: flex;
@@ -177,57 +123,8 @@ p {
   font-weight: bold;
 }
 
-/* Windows 2000 Terminal Window Styling */
-/* .terminal-window {
-    /* background-color: #c0c0c0;
-    padding: 0;
-    margin: 1.5rem auto;
-    border: 2px outset #c0c0c0;
-    max-width: 900px;
-    cursor: pointer;
-    font-family: 'Share Tech Mono', monospace;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-}
-
-.terminal-window:hover {
-    border: 2px outset #d0d0d0;
-}
-
-.terminal-header {
-    background: linear-gradient(to right, #808080, #c0c0c0);
-    color: #000000;
-    padding: 0.25rem 0.5rem;
-    font-size: 0.8rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-family: 'Share Tech Mono', monospace;
-    font-weight: bold;
-    border-bottom: 1px solid #808080;
-}
-
-.terminal-buttons {
-    display: flex;
-    gap: 0.25rem;
-}
-
-.terminal-button {
-    width: 20px;
-    height: 20px;
-    border: 1px outset #c0c0c0;
-    background-color: #c0c0c0;
-    font-size: 0.6rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    font-family: 'Share Tech Mono', monospace;
-    font-weight: bold;
-}
-*/
-
 .terminal-button:active {
-  border: 1px inset #d8d9da;
+  border: 2px inset #d8d9da;
 }
 
 .terminal-button.maximize {
@@ -235,7 +132,7 @@ p {
 }
 
 .terminal-button i {
-  font-size: 10px;
+  font-size: 0.75rem;
   color: black;
   line-height: 1;
   align-items: center;
@@ -245,9 +142,9 @@ p {
 .terminal-content {
   background-color: #000000;
   color: #00ff00;
-  padding: 1rem;
+  padding: 2px;
   font-family: 'Share Tech Mono', monospace;
-  font-size: 0.9rem;
+  font-size: 16px;
   line-height: 1.2;
   min-height: 150px;
   }
