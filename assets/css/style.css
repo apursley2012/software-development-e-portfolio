@@ -260,49 +260,64 @@ p {
 }
 
 .site-footer {
+  cursor: pointer;
+  font-family: 'Share Tech Mono', monospace;
   width: 100%;
-  margin-top: 2rem;
-  padding: 0;
   background-color: transparent;
   font-family: 'Share Tech Mono', monospace;
 }
 
 .footer-container {
-  max-width: 900px;
-  margin: 0 auto;
+  display: flex;
+  margin: 4px;
   border-top: 2px outset #ffffff;
   border-left: 2px outset #ffffff;
   border-right: 2px outset #404040;
   border-bottom: 2px outset #404040;
-  background-color: #000000;
+  background-color: #d8d9da;
 }
 
 .footer-header {
-  background: linear-gradient(to right, #808080, #a0a0a0, #c0c0c0);
+  background: linear-gradient(to right, #808080, #909090, #a0a0a0, #b0b0b0, #c0c0c0);
   color: #000000;
-  padding: 4px 6px;
-  font-weight: bold;
-  font-size: 1rem;
+  padding: 4px 6px; 
+  font-size: 18px;
   display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: space-between;
-}
+  font-family: 'Share Tech Mono', monospace;
+  font-weight: bold;
+  border-top: 2px inset #ffffff;     
+  border-left: 2px inset #ffffff; 
+  border-right: 2px inset #404040;
+  border-bottom: 2px inset #404040;
+  }
+  /*
+  justify-content: space-between;*/
 
 .footer-content {
   background-color: #000000;
-  color: #33ff00;
-  padding: 0.75rem;
-  font-size: 0.85rem;
+  color: #00ff00;
+  padding: 2px;
+  font-size: 16px;
   text-align: center;
-  text-shadow: 0 0 8px #33ff00;
-  border-top: 1px solid #202020;
-}
+  line-height: 1.5;
+  min-height: 150px;
+  }
+
 
 .footer-content code {
   font-family: 'Share Tech Mono', monospace;
-  background: none;
+  display: block;
   color: #33ff00;
-  text-shadow: 0 0 8px #33ff00;
+  background: #000000;
+  white-space: pre-wrap;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  text-shadow:
+    0 0 8px #2bd852,         /* Gentle glow */
+    1px 1px 5px #a9a9a9,     /* Soft shadow bottom-right */
+    -1px -1px 5px #3a3a3a;   /* Slight top-left contrast */
 }
 
 body {
