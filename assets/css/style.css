@@ -382,3 +382,12 @@ p {
   border-radius: 3px;
   text-shadow: 0 0 5px #ccff00;
 }
+
+.site-footer {
+  margin-top: 2rem;
+  padding: 1rem 0;
+  background-color: #121212;
+  color: #888888;
+  font-size: 0.9rem;
+  text-align: center;
+}
