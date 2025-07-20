@@ -32,7 +32,7 @@ h1 {
        3px 3px 0 #202020,
       0 0 8px #2bd852,         /* Gentle glow */
     1px 1px 5px #a9a9a9,     /* Soft shadow bottom-right */
-    -1px -1px 5px #3a3a3a;   
+    -1px -1px 5px #3a3a3a,
   margin-bottom: 1.5rem;
   text-align: center; 
 }
@@ -40,7 +40,11 @@ h1 {
 h2 {
   font-family: 'Share Tech Mono', 'Extrude','Tourney','Static','SixtyFour', 'Audiowide','Press Start 2P', monospace;
   color: #f0fff8;
-  text-shadow: 0 0 3px #80ffc0, 0 0 10px #66cc00, 0 0 20px #66cc00, 0 0 30px #66cc00;
+  text-shadow: 
+      0 0 3px #80ffc0, 
+      0 0 10px #66cc00, 
+      0 0 20px #66cc00, 
+      0 0 30px #66cc00;
   text-align: center;
   margin-bottom: 1.5rem;
   font-size: 1.5rem;
@@ -162,31 +166,6 @@ p {
     1px 1px 5px #a9a9a9,     /* Soft shadow bottom-right */
     -1px -1px 5px #3a3a3a;   /* Slight top-left contrast */
 }
-/*
-.terminal-content code {
-  display: block;
-  background: none;
-  white-space: pre-wrap;
-   color: #f0fff8;
-  text-shadow: 0 0 3px #80ffc0, 0 0 10px #66cc00, 0 0 20px #66cc00, 0 0 30px #66cc00;
-  text-align: left;
-  margin-bottom: 1.5rem;
-}
-/*
-  .glow-text {
-  color: #f4ffe0;
-  text-shadow:
-    0 0 2px #00ff00,
-    0 0 6px #00ff00,
-    1px 1px 2px #333333,
-    2px 2px 4px #000000,
-    -1px -1px 1px #444444;
-  margin-bottom: 1.5rem;
-    eeeefont-family: 'Share Tech Mono)ruëawaqassssddddrr', monospace;
-  font-size: 0.9rem;
-  line-height: 1.2;
-  tab-size: 4;
-} */
 
 .clickable-link {
   color: #00ffff;
@@ -324,4 +303,18 @@ p {
   background: none;
   color: #33ff00;
   text-shadow: 0 0 8px #33ff00;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+.site-footer {
+  margin-top: auto;
 }
