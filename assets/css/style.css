@@ -264,17 +264,21 @@ p {
   font-family: 'Share Tech Mono', monospace;
   width: 100%;
   background-color: transparent;
+  margin-top: auto;
   font-family: 'Share Tech Mono', monospace;
 }
 
 .footer-container {
   display: flex;
+  flex-direction: column;
+  width: 100%;
   margin: 4px;
   border-top: 2px outset #ffffff;
   border-left: 2px outset #ffffff;
   border-right: 2px outset #404040;
   border-bottom: 2px outset #404040;
   background-color: #d8d9da;
+  box-sizing: border-box;
 }
 
 .footer-header {
@@ -283,6 +287,7 @@ p {
   padding: 4px 6px; 
   font-size: 18px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   font-family: 'Share Tech Mono', monospace;
@@ -304,7 +309,6 @@ p {
   line-height: 1.5;
   min-height: 150px;
   }
-
 
 .footer-content code {
   font-family: 'Share Tech Mono', monospace;
