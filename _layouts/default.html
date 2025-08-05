@@ -12,7 +12,7 @@
   <!-- Font Awesome -->
   <script src="https://kit.fontawesome.com/3564f42dfc.js" crossorigin="anonymous"></script>
 
-  <!-- Your CSS -->
+  <!-- Main stylesheet -->
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
 <body>
@@ -32,9 +32,10 @@
   </footer>
 
   <script>
-    // live date‐time in footer
+    // Live date/time
     document.getElementById('date-time').textContent = new Date().toLocaleString();
-    // typing effect for your H1
+
+    // Typing effect for H1
     document.addEventListener("DOMContentLoaded", function () {
       const target = document.getElementById("typed-text");
       if (!target) return;
