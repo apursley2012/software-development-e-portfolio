@@ -3,61 +3,24 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{{ page.title | default: site.title }}</title>
-    
-    <!-- Connect/Import Google fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-          
-    <!-- Google Fonts Stylesheets -->
-    <link href="https://fonts.googleapis.com/css2?family=Anta&family=Atma:wght@300;400;500;600;700&family=Atomic+Age&family=Audiowide&family=BhuTuka+Expanded+One&family=Bungee+Shade&family=Coral+Pixels&family=DotGothic16&family=Doto:wght@100..900&family=Handjet:wght@100..900&family=Honk&family=Jersey+15&family=Londrina+Shadow&family=Major+Mono+Display&family=Pixelify+Sans:wght@400..700&family=Press+Start+2P&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&family=Raleway+Dots&family=Rampart+One&family=Rubik+Glitch&family=Sankofa+Display&family=Share+Tech+Mono&family=Silkscreen:wght@400;700&family=Sirin+Stencil&family=Sixtyfour&family=Sixtyfour+Convergence&family=Stalinist+One&family=Syne+Mono&family=Tektur:wght@400..900&family=Tourney:ital,wght@0,100..900;1,100..900&family=VT323&family=Vast+Shadow&family=Workbench&display=swap" rel="stylesheet">
-      <!-- Font Awesome Kit -->
-      
-     <script src="https://kit.fontawesome.com/3564f42dfc.js" crossorigin="anonymous"></script>
-     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
-  <!-- CSS -->
-  <link rel="stylesheet" href="/assets/css/style.css">
+  <title>{{ page.title | default: site.title }}</title>
 
-  <style>
-   
-    body {
-      visibility: visible; 
-    }
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Share+Tech+Mono&display=swap" rel="stylesheet">
 
-    .terminal-window,
-    .markdown-content,
-    .terminal-header,
-    .status-bar {
-      visibility: visible;
-    }
-  </style>
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/3564f42dfc.js" crossorigin="anonymous"></script>
 
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const target = document.getElementById("typed-text");
-    if (!target) return;
-
-    const originalText = target.textContent.trim();
-    target.textContent = "";
-
-    let i = 0;
-    function typeChar() {
-      if (i < originalText.length) {
-        target.textContent += originalText.charAt(i);
-        i++;
-        setTimeout(typeChar, 160);
-      }
-    }
-
-    typeChar();
-  });
-</script>
+  <!-- Your CSS -->
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
-
+<body>
   <main>
-        {{ content }}
+    {{ content }}
   </main>
-  <body>
-     <footer class="site-footer">
+
+  <footer class="site-footer">
     <div class="footer-container">
       <div class="footer-header">System Message</div>
       <div class="footer-content">
@@ -69,7 +32,23 @@
   </footer>
 
   <script>
+    // live date‐time in footer
     document.getElementById('date-time').textContent = new Date().toLocaleString();
+    // typing effect for your H1
+    document.addEventListener("DOMContentLoaded", function () {
+      const target = document.getElementById("typed-text");
+      if (!target) return;
+      const text = target.textContent.trim();
+      target.textContent = "";
+      let i = 0;
+      function type() {
+        if (i < text.length) {
+          target.textContent += text.charAt(i++);
+          setTimeout(type, 160);
+        }
+      }
+      type();
+    });
   </script>
 </body>
 </html>
