@@ -9,19 +9,14 @@ title: Software Development ePortfolio
   This is my Software Development ePortfolio site. Here you will find the projects and enhancements I have created while working toward my CS bachelor's in Software Development.
 </div>
 
+<!-- Terminal Window: Code Review -->
 <div class="terminal-window">
   <div class="terminal-header">
     <span>Code Review</span>
     <div class="terminal-buttons">
-      <div class="terminal-button minimize">
-        <i class="fa-solid fa-window-minimize"></i>
-      </div>
-      <div class="terminal-button maximize">
-        <i class="fa-regular fa-window-maximize"></i>
-      </div>
-      <div class="terminal-button close">
-        <i class="fa-solid fa-x"></i>
-      </div>
+      <div class="terminal-button minimize"><i class="fa-solid fa-window-minimize"></i></div>
+      <div class="terminal-button maximize"><i class="fa-regular fa-window-maximize"></i></div>
+      <div class="terminal-button close"><i class="fa-solid fa-x"></i></div>
     </div>
   </div>
   <div class="terminal-content">
@@ -40,19 +35,14 @@ Opening file: code-review.md ...
   <div class="status-bar">Ready</div>
 </div>
 
+<!-- Repeat for Enhancements 1–3 -->
 <div class="terminal-window">
   <div class="terminal-header">
     <span>Enhancement One: CornerGrocer App</span>
     <div class="terminal-buttons">
-      <div class="terminal-button minimize">
-        <i class="fa-solid fa-window-minimize"></i>
-      </div>
-      <div class="terminal-button maximize">
-        <i class="fa-regular fa-window-maximize"></i>
-      </div>
-      <div class="terminal-button close">
-        <i class="fa-solid fa-x"></i>
-      </div>
+      <div class="terminal-button minimize"><i class="fa-solid fa-window-minimize"></i></div>
+      <div class="terminal-button maximize"><i class="fa-regular fa-window-maximize"></i></div>
+      <div class="terminal-button close"><i class="fa-solid fa-x"></i></div>
     </div>
   </div>
   <div class="terminal-content">
@@ -75,15 +65,9 @@ Opening file: enhancement-one.md ...
   <div class="terminal-header">
     <span>Enhancement Two: Sort & Search</span>
     <div class="terminal-buttons">
-      <div class="terminal-button minimize">
-        <i class="fa-solid fa-window-minimize"></i>
-      </div>
-      <div class="terminal-button maximize">
-        <i class="fa-regular fa-window-maximize"></i>
-      </div>
-      <div class="terminal-button close">
-        <i class="fa-solid fa-x"></i>
-      </div>
+      <div class="terminal-button minimize"><i class="fa-solid fa-window-minimize"></i></div>
+      <div class="terminal-button maximize"><i class="fa-regular fa-window-maximize"></i></div>
+      <div class="terminal-button close"><i class="fa-solid fa-x"></i></div>
     </div>
   </div>
   <div class="terminal-content">
@@ -106,15 +90,9 @@ Opening file: enhancement-two.md ...
   <div class="terminal-header">
     <span>Enhancement Three: SQLite DB</span>
     <div class="terminal-buttons">
-      <div class="terminal-button minimize">
-        <i class="fa-solid fa-window-minimize"></i>
-      </div>
-      <div class="terminal-button maximize">
-        <i class="fa-regular fa-window-maximize"></i>
-      </div>
-      <div class="terminal-button close">
-        <i class="fa-solid fa-x"></i>
-      </div>
+      <div class="terminal-button minimize"><i class="fa-solid fa-window-minimize"></i></div>
+      <div class="terminal-button maximize"><i class="fa-regular fa-window-maximize"></i></div>
+      <div class="terminal-button close"><i class="fa-solid fa-x"></i></div>
     </div>
   </div>
   <div class="terminal-content">
