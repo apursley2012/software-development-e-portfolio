@@ -1,5 +1,5 @@
 /*──────────────────────────────────────────────────────────────────
-  Sticky full-width footer: this must be **first** in your CSS
+  Sticky full-width footer (MUST be first!)
 ──────────────────────────────────────────────────────────────────*/
 body {
   margin: 0;
@@ -22,13 +22,13 @@ main {
 
 .site-footer {
   width: 100%;
-  margin-top: auto;
+  margin-top: auto; /* push footer to bottom */
   cursor: pointer;
   font-family: 'Share Tech Mono', monospace;
 }
 
 /*──────────────────────────────────────────────────────────────────
-  Your existing styles—unchanged below
+  Your existing styles unchanged below
 ──────────────────────────────────────────────────────────────────*/
 
 @font-face {
