@@ -38,7 +38,7 @@ Opening file: code-review.md ...
     <div class="status-bar">Ready</div>
 </div>
 
-<div class="terminal-window" onclick="openPage('project-artifacts')">
+<div class="terminal-window" onclick="openPage('[enhancement-one](https://github.com/apursley2012/software-development-e-portfolio/blob/main/enhancement-one.md)')">
   <div class="terminal-header">
     <span>Project Artifacts</span>
     <div class="terminal-buttons">
