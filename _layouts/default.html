@@ -16,8 +16,6 @@
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
 <body>
-  <!-- Optional site-wide header/nav could go here -->
-
   <main>
     {{ content }}
   </main>
@@ -37,20 +35,20 @@
     // Live date/time
     document.getElementById('date-time').textContent = new Date().toLocaleString();
 
-    // Typing effect for any <h1 id="typed-text">
+    // Typing effect for H1
     document.addEventListener("DOMContentLoaded", function () {
       const target = document.getElementById("typed-text");
       if (!target) return;
       const text = target.textContent.trim();
       target.textContent = "";
       let i = 0;
-      function typeChar() {
+      function type() {
         if (i < text.length) {
           target.textContent += text.charAt(i++);
-          setTimeout(typeChar, 160);
+          setTimeout(type, 160);
         }
       }
-      typeChar();
+      type();
     });
   </script>
 </body>
