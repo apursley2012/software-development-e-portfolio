@@ -3,72 +3,73 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>{{ page.title | default: site.title }}</title>
+    <title>{{ page.title | default: site.title }}</title>
+    
+    <!-- Connect/Import Google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+          
+    <!-- Google Fonts Stylesheets -->
+    <link href="https://fonts.googleapis.com/css2?family=Anta&family=Atma:wght@300;400;500;600;700&family=Atomic+Age&family=Audiowide&family=BhuTuka+Expanded+One&family=Bungee+Shade&family=Coral+Pixels&family=DotGothic16&family=Doto:wght@100..900&family=Handjet:wght@100..900&family=Honk&family=Jersey+15&family=Londrina+Shadow&family=Major+Mono+Display&family=Pixelify+Sans:wght@400..700&family=Press+Start+2P&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&family=Raleway+Dots&family=Rampart+One&family=Rubik+Glitch&family=Sankofa+Display&family=Share+Tech+Mono&family=Silkscreen:wght@400;700&family=Sirin+Stencil&family=Sixtyfour&family=Sixtyfour+Convergence&family=Stalinist+One&family=Syne+Mono&family=Tektur:wght@400..900&family=Tourney:ital,wght@0,100..900;1,100..900&family=VT323&family=Vast+Shadow&family=Workbench&display=swap" rel="stylesheet">
+      <!-- Font Awesome Kit -->
+      
+     <script src="https://kit.fontawesome.com/3564f42dfc.js" crossorigin="anonymous"></script>
+     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  <!-- CSS -->
+  <link rel="stylesheet" href="/assets/css/style.css">
 
-  <!-- Google Fonts -->
-  <link
-    rel="preconnect"
-    href="https://fonts.gstatic.com"
-    crossorigin
-  />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Share+Tech+Mono&display=swap"
-    rel="stylesheet"
-  />
+  <style>
+   
+    body {
+      visibility: visible; 
+    }
 
-  <!-- Font Awesome -->
-  <script src="https://kit.fontawesome.com/3564f42dfc.js" crossorigin="anonymous"></script>
+    .terminal-window,
+    .markdown-content,
+    .terminal-header,
+    .status-bar {
+      visibility: visible;
+    }
+  </style>
 
-  <!-- Main stylesheet -->
-  <link
-    rel="stylesheet"
-    href="{{ '/assets/css/style.css' | relative_url }}"
-  />
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const target = document.getElementById("typed-text");
+    if (!target) return;
+
+    const originalText = target.textContent.trim();
+    target.textContent = "";
+
+    let i = 0;
+    function typeChar() {
+      if (i < originalText.length) {
+        target.textContent += originalText.charAt(i);
+        i++;
+        setTimeout(typeChar, 160);
+      }
+    }
+
+    typeChar();
+  });
+</script>
 </head>
 
-<body>
   <main>
-    {{ content }}
+        {{ content }}
   </main>
-
-  <footer class="site-footer">
+  <body>
+     <footer class="site-footer">
     <div class="footer-container">
       <div class="footer-header">System Message</div>
       <div class="footer-content">
         <p>Proudly built one line of code (and one late night) at a time.</p>
-        <p>
-          <i class="fa-regular fa-copyright"></i>
-          2025 Alysha Pursley
-        </p>
+        <p><i class="fa-regular fa-copyright"></i> 2025 Alysha Pursley</p>
         <p id="date-time"></p>
       </div>
     </div>
   </footer>
 
   <script>
-    // Live timestamp in footer
-    document.getElementById("date-time").textContent =
-      new Date().toLocaleString();
-  </script>
-
-  <script>
-    // Typewriter effect for the h1#typed-text
-    document.addEventListener("DOMContentLoaded", function () {
-      const target = document.getElementById("typed-text");
-      if (!target) return;
-
-      const original = target.textContent.trim();
-      target.textContent = "";
-
-      let i = 0;
-      function typeChar() {
-        if (i < original.length) {
-          target.textContent += original.charAt(i++);
-          setTimeout(typeChar, 160);
-        }
-      }
-      typeChar();
-    });
+    document.getElementById('date-time').textContent = new Date().toLocaleString();
   </script>
 </body>
 </html>
