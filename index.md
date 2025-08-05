@@ -3,13 +3,13 @@ layout: default
 title: Software Development ePortfolio
 ---
 
-# Welcome to My Software Development ePortfolio
+<h1 id="page-title" data-text="Welcome to My Software Development ePortfolio"></h1>
 
 <div class="intro-text">
-This is my Software Development ePortfolio site. Here you will find the projects and enhancements I have created while working toward my CS bachelor's in Software Development.
+  This is my Software Development ePortfolio site. Here you will find the projects and enhancements I have created while working toward my CS bachelor's in Software Development.
 </div>
 
-<div class="terminal-window" onclick="openPage('code-review')">
+<div class="terminal-window">
   <div class="terminal-header">
     <span>Code Review</span>
     <div class="terminal-buttons">
@@ -24,23 +24,27 @@ This is my Software Development ePortfolio site. Here you will find the projects
       </div>
     </div>
   </div>
-    <div class="terminal-content">
-        <code>apursley2012@ePortfolio-PC:~$ cd Software-Dev-ePortfolio
-apursley2012@ePortfolio-PC:~/Software-Dev-ePortfolio$ python
-Python 3.11.4 (tags/v3.11.4)
->>> # Open and read Code Review page
->>> path = r"Software-Dev-ePortfolio/code-review.md"
->>> file = open(path, "r")
->>> print(file.read())
-Opening file: code-review.md ...
-<span class="clickable-link">code-review.md</span></code>
-    </div>
-    <div class="status-bar">Ready</div>
+  <div class="terminal-content">
+    <code>
+      apursley2012@ePortfolio-PC:~$ cd software-development-e-portfolio  
+      apursley2012@ePortfolio-PC:~/software-development-e-portfolio$ python  
+      Python 3.11.4 (tags/v3.11.4)  
+      &gt;&gt;&gt; # Open and read Code Review page  
+      &gt;&gt;&gt; path = r"software-development-e-portfolio/code-review.md"  
+      &gt;&gt;&gt; file = open(path, "r")  
+      &gt;&gt;&gt; print(file.read())  
+      Opening file:  
+      <span class="clickable-link" onclick="openPage('code-review')">
+        code-review.md
+      </span>
+    </code>
+  </div>
+  <div class="status-bar">Ready</div>
 </div>
 
-<div class="terminal-window" onclick="openPage('[enhancement-one](https://github.com/apursley2012/software-development-e-portfolio/blob/main/enhancement-one.md)')">
+<div class="terminal-window">
   <div class="terminal-header">
-    <span>Project Artifacts</span>
+    <span>Enhancement One: CornerGrocer App</span>
     <div class="terminal-buttons">
       <div class="terminal-button minimize">
         <i class="fa-solid fa-window-minimize"></i>
@@ -53,21 +57,25 @@ Opening file: code-review.md ...
       </div>
     </div>
   </div>
-    <div class="terminal-content">
-        <code>apursley2012@ePortfolio-PC:~$ cd Software-Dev-ePortfolio
-apursley2012@ePortfolio-PC:~/Software-Dev-ePortfolio$ python
-Python 3.11.4 (tags/v3.11.4)
->>> # Open and read Project Artifacts page
->>> path = r"Software-Dev-ePortfolio/artifacts.md"
->>> file = open(path, "r")
->>> print(file.read())
-Opening file: project-artifacts.md ...
-<span class="clickable-link">project-artifacts.md</span></code>
-    </div>
-    <div class="status-bar">Ready</div>
+  <div class="terminal-content">
+    <code>
+      apursley2012@ePortfolio-PC:~$ cd software-development-e-portfolio  
+      apursley2012@ePortfolio-PC:~/software-development-e-portfolio$ python  
+      Python 3.11.4 (tags/v3.11.4)  
+      &gt;&gt;&gt; # Open and read Enhancement One  
+      &gt;&gt;&gt; path = r"software-development-e-portfolio/enhancement-one.md"  
+      &gt;&gt;&gt; file = open(path, "r")  
+      &gt;&gt;&gt; print(file.read())  
+      Opening file:  
+      <span class="clickable-link" onclick="openPage('enhancement-one')">
+        enhancement-one.md
+      </span>
+    </code>
+  </div>
+  <div class="status-bar">Ready</div>
 </div>
 
-<div class="terminal-window" onclick="openPage('Narratives')">
+<div class="terminal-window">
   <div class="terminal-header">
     <span>Narratives</span>
     <div class="terminal-buttons">
@@ -82,21 +90,25 @@ Opening file: project-artifacts.md ...
       </div>
     </div>
   </div>
-    <div class="terminal-content">
-        <code>apursley2012@ePortfolio-PC:~$ cd Software-Dev-ePortfolio
-apursley2012@ePortfolio-PC:~/Software-Dev-ePortfolio$ python
-Python 3.11.4 (tags/v3.11.4)
->>> # Open and read Narratives page
->>> path = r"Software-Dev-ePortfolio/narratives.md"
->>> file = open(path, "r")
->>> print(file.read())
-Opening file: narratives.md ...
-<span class="clickable-link">narratives.md</span></code>
-    </div>
-    <div class="status-bar">Ready</div>
+  <div class="terminal-content">
+    <code>
+      apursley2012@ePortfolio-PC:~$ cd software-development-e-portfolio  
+      apursley2012@ePortfolio-PC:~/software-development-e-portfolio$ python  
+      Python 3.11.4 (tags/v3.11.4)  
+      &gt;&gt;&gt; # Open and read Narratives page  
+      &gt;&gt;&gt; path = r"software-development-e-portfolio/narratives.md"  
+      &gt;&gt;&gt; file = open(path, "r")  
+      &gt;&gt;&gt; print(file.read())  
+      Opening file:  
+      <span class="clickable-link" onclick="openPage('narratives')">
+        narratives.md
+      </span>
+    </code>
+  </div>
+  <div class="status-bar">Ready</div>
 </div>
 
-<div class="terminal-window" onclick="openPage('self-assessment')">
+<div class="terminal-window">
   <div class="terminal-header">
     <span>Professional Self-Assessment</span>
     <div class="terminal-buttons">
@@ -111,21 +123,25 @@ Opening file: narratives.md ...
       </div>
     </div>
   </div>
-    <div class="terminal-content">
-        <code>apursley2012@ePortfolio-PC:~$ cd Software-Dev-ePortfolio
-apursley2012@ePortfolio-PC:~/Software-Dev-ePortfolio$ python
-Python 3.11.4 (tags/v3.11.4)
->>> # Open and read Professional Self-Assessment page
->>> path = r"Software-Dev-ePortfolio/self-assessment.md"
->>> file = open(path, "r")
->>> print(file.read())
-Opening file: professional-self-assessment.md ...
-<span class="clickable-link">self-assessment.md</span></code>
-    </div>
-    <div class="status-bar">Ready</div>
+  <div class="terminal-content">
+    <code>
+      apursley2012@ePortfolio-PC:~$ cd software-development-e-portfolio  
+      apursley2012@ePortfolio-PC:~/software-development-e-portfolio$ python  
+      Python 3.11.4 (tags/v3.11.4)  
+      &gt;&gt;&gt; # Open and read Professional Self-Assessment page  
+      &gt;&gt;&gt; path = r"software-development-e-portfolio/self-assessment.md"  
+      &gt;&gt;&gt; file = open(path, "r")  
+      &gt;&gt;&gt; print(file.read())  
+      Opening file:  
+      <span class="clickable-link" onclick="openPage('self-assessment')">
+        self-assessment.md
+      </span>
+    </code>
+  </div>
+  <div class="status-bar">Ready</div>
 </div>
 
-<div class="terminal-window" onclick="openPage('contact')">
+<div class="terminal-window">
   <div class="terminal-header">
     <span>Contact</span>
     <div class="terminal-buttons">
@@ -140,22 +156,26 @@ Opening file: professional-self-assessment.md ...
       </div>
     </div>
   </div>
-    <div class="terminal-content">
-        <code>apursley2012@ePortfolio-PC:~$ cd Software-Dev-ePortfolio
-apursley2012@ePortfolio-PC:~/Software-Dev-ePortfolio$ python
-Python 3.11.4 (tags/v3.11.4)
->>> # Open and read Contact page
->>> path = r"Software-Dev-ePortfolio/contact.md"
->>> file = open(path, "r")
->>> print(file.read())
-Opening file: contact.md ...
-<span class="clickable-link">contact.md</span></code>
-    </div>
-    <div class="status-bar">Ready</div>
+  <div class="terminal-content">
+    <code>
+      apursley2012@ePortfolio-PC:~$ cd software-development-e-portfolio  
+      apursley2012@ePortfolio-PC:~/software-development-e-portfolio$ python  
+      Python 3.11.4 (tags/v3.11.4)  
+      &gt;&gt;&gt; # Open and read Contact page  
+      &gt;&gt;&gt; path = r"software-development-e-portfolio/contact.md"  
+      &gt;&gt;&gt; file = open(path, "r")  
+      &gt;&gt;&gt; print(file.read())  
+      Opening file:  
+      <span class="clickable-link" onclick="openPage('contact')">
+        contact.md
+      </span>
+    </code>
+  </div>
+  <div class="status-bar">Ready</div>
 </div>
 
 <script>
 function openPage(pageName) {
-    window.location.href = pageName + '.html';
+  window.location.href = pageName + '.html';
 }
 </script>
