@@ -305,13 +305,14 @@ p {
 }
 
 .footer-content {
-  background-color: #000000;
-  color: #00ff00;
-  padding: 2px;
-  font-size: 16px;
-  text-align: center;
-  line-height: 1.5;
-  min-height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;  /* push text to bottom */
+  align-items: center;        /* center text horizontally */
+  padding: 0.5rem;            /* a bit of breathing room */
+  font-size: 0.75rem;         /* make text smaller */
+  min-height: 2.5rem;         /* ensure a tiny minimum height */
+  text-align: center;         /* fallback center */
 }
 
 .footer-content code {
