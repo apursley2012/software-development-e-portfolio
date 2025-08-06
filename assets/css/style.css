@@ -7,7 +7,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background-color: 	#62c2cc;
+  background-color: #1E9AB0;
   color: #ffffff;
   font-family: 'Share Tech Mono', monospace;
 }
