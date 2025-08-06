@@ -304,15 +304,22 @@ p {
   border-bottom: 2px inset #404040;
 }
 
+/* **ONLY THIS BLOCK WAS CHANGED** */
 .footer-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;  /* push text to bottom */
-  align-items: center;        /* center text horizontally */
-  padding: 0.5rem;            /* a bit of breathing room */
-  font-size: 0.75rem;         /* make text smaller */
-  min-height: 2.5rem;         /* ensure a tiny minimum height */
-  text-align: center;         /* fallback center */
+  background-color: #000000;
+  color: #00ff00;
+  padding: 8px;           /* some breathing room */
+  font-size: 0.9rem;      /* slightly smaller text */
+  line-height: 1.2;
+  display: flex;          /* make it a flex container */
+  justify-content: center;/* horizontal center */
+  align-items: flex-end;  /* stick text to bottom */
+  min-height: 2.5rem;     /* auto-expands if text wraps */
+  box-sizing: border-box; /* include padding in size */
+  text-shadow:
+    0 0 8px #2bd852,
+    1px 1px 5px #a9a9a9,
+    -1px -1px 5px #3a3a3a;
 }
 
 .footer-content code {
