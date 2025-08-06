@@ -8,14 +8,14 @@ title: Enhancement Three Demo
 <p>This is a live demo of my Corner Grocer application, rewritten in Python and backed by SQLite.  You can sort items, search frequencies, and see the results update in real time.</p>
 
 <div class="app-container">
-  <iframe 
+  <iframe
     src="https://0d394c1a-e07e-4561-aa6f-dd80385df9db-00-loqi0vrnbdsb.spock.replit.dev"
     width="100%" 
-    height="800px"
+    height="75%"
     frameborder="0"
-    style="border-radius: 10px; box-shadow: 0 4px 20px rgba(0,0,0,0.1);"
-    title="Corner Grocer Demo">
-</iframe>
+    class="embedded-app"
+    title="Corner Grocer">
+  </iframe>
 </div>
 
 
