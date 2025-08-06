@@ -304,22 +304,14 @@ p {
   border-bottom: 2px inset #404040;
 }
 
-/* **ONLY THIS BLOCK WAS CHANGED** */
 .footer-content {
   background-color: #000000;
   color: #00ff00;
-  padding: 8px;           /* some breathing room */
-  font-size: 0.9rem;      /* slightly smaller text */
-  line-height: 1.2;
-  display: flex;          /* make it a flex container */
-  justify-content: center;/* horizontal center */
-  align-items: flex-end;  /* stick text to bottom */
-  min-height: 2.5rem;     /* auto-expands if text wraps */
-  box-sizing: border-box; /* include padding in size */
-  text-shadow:
-    0 0 8px #2bd852,
-    1px 1px 5px #a9a9a9,
-    -1px -1px 5px #3a3a3a;
+  padding: 2px;
+  font-size: 16px;
+  text-align: center;
+  line-height: 1.5;
+  min-height: 150px;
 }
 
 .footer-content code {
