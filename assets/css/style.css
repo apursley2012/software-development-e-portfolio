@@ -316,11 +316,18 @@ p {
 
 .footer-content code {
   font-family: 'Share Tech Mono', monospace;
-  display: block;
+  background-color: #000000;
+  color: #00ff00;
+  flex-direction: column;   /* stack contents top→bottom */
+  justify-content: flex-end;/* push content to bottom */
+  align-items: center;      /* center content horizontally */
+  padding: 8px;
+  line-height: 1.5;
+  display: flex;
   color: #33ff00;
   background: #000000;
   white-space: pre-wrap;
-  font-size: 0.9rem;
+  font-size: 12px;
   line-height: 1.5;
   text-shadow:
     0 0 8px #2bd852,
