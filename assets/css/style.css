@@ -5,7 +5,7 @@ body {
   margin: 0;
   padding: 0;
   display: flex;
-  "position: relative
+  position: relative;
   flex-direction: column;
   min-height: 100vh;
   background-color: #205A65;
