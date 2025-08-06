@@ -21,12 +21,9 @@ main {
 }
 
 .site-footer {
-  width: 100%;
+ width: 100%;
   margin-top: auto; /* push footer to bottom */
   cursor: pointer;
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
   font-family: 'Share Tech Mono', monospace;
 }
 
@@ -325,6 +322,7 @@ p {
   font-size: 14px;
   display: flex;
   justify-content: center;
+  align-items: flex-end;
   line-height: 1.5;
   text-shadow:
     0 0 8px #2bd852,
