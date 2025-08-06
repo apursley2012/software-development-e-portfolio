@@ -21,7 +21,6 @@ title: Enhancement Three Demo
 
 
 <style>
-/* you can also move these into your main CSS file if you prefer */
 .app-container {
   margin: 2rem 0;
   border-radius: 12px;
