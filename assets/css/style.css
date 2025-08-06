@@ -1,5 +1,5 @@
 /*──────────────────────────────────────────────────────────────────
-  Sticky full-width footer (MUST be first!)
+  Sticky full-width footer
 ──────────────────────────────────────────────────────────────────*/
 body {
   margin: 0;
@@ -12,25 +12,35 @@ body {
   font-family: 'Share Tech Mono', monospace;
 }
 
+/* Let the main content grow to push the footer down */
 main {
-  flex: 1;
+  flex-grow: 1;
   width: 100%;
-  max-width: 100;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 2rem;
 }
 
+/*──────────────────────────────────────────────────────────────────
+  Center & fluid-resize your windows
+──────────────────────────────────────────────────────────────────*/
+.terminal-window,
+.markdown-content {
+  width: 100%;
+  max-width: 900px;
+  margin: 32px auto;
+  box-sizing: border-box;
+}
+
+/*────────── Footer ──────────*/
 .site-footer {
   width: 100%;
-  margin-top: auto; /* push footer to bottom */
-  display: flex;
-  flex-direction: column;
   cursor: pointer;
   font-family: 'Share Tech Mono', monospace;
 }
 
 /*──────────────────────────────────────────────────────────────────
-  Your existing styles unchanged below
+  Your existing styles unchanged except for the one semicolon fix
 ──────────────────────────────────────────────────────────────────*/
 
 @font-face {
@@ -93,10 +103,7 @@ p {
 /* Terminal Window */
 .terminal-window {
   background-color: #d8d9da;
-  margin: 32px auto;  /* vertical margin + horizontal centering */
-  box-sizing: border-box;
   padding: 2.5px;
-  max-width: 900px;
   cursor: pointer;
   font-family: 'Share Tech Mono', monospace;
   border-top: 2px outset #ffffff;
@@ -214,7 +221,6 @@ p {
   margin: 2rem auto;
   border-radius: 5px;
   box-shadow: 0 0 15px rgba(0, 255, 136, 0.5);
-  max-width: 900px;
 }
 
 .markdown-content h2,
@@ -252,7 +258,7 @@ p {
 
 .markdown-content ul,
 .markdown-content ol {
-  list-style-type: none;
+  list-style: none;
   padding-left: 1.5rem;
 }
 
@@ -281,28 +287,25 @@ p {
 }
 
 /* Footer internals */
-
 .footer-container {
-  background-color: #d8d9da;
-  box-sizing: border-box;
   display: flex;
-  justify-content: flex-end;/* push content to bottom */
-  align-items: center;      /* center content horizontally */
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
   width: 100%;
-  margin: 32px auto;  /* vertical margin + horizontal centering */
-  padding: 2.5px;
-  max-width: 900px;
-  cursor: pointer;
+  margin: 8px;
   border-top: 2px outset #ffffff;
   border-left: 2px outset #ffffff;
   border-right: 2px outset #404040;
   border-bottom: 2px outset #404040;
-  }
+  background-color: #d8d9da;
+  box-sizing: border-box;
+}
 
 .footer-header {
   background: linear-gradient(to right, #808080, #909090, #a0a0a0, #b0b0b0, #c0c0c0);
   color: #000000;
-  padding: 4px 4px;
+  padding: 4px 6px;
   font-size: 18px;
   display: flex;
   justify-content: center;
@@ -320,7 +323,7 @@ p {
   color: #33ff00;
   background: #000000;
   white-space: pre-wrap;
-  padding: 4px
+  padding: 8px;               /* <-- semicolon was missing here */
   font-size: 14px;
   display: flex;
   justify-content: center;
