@@ -127,7 +127,7 @@ Python 3.11.4 (tags/v3.11.4)
 &gt;&gt;&gt; file = open(path, "r")  
 &gt;&gt;&gt; print(file.read())  
 Opening file: enhancement-three.md ...  
-<span class="clickable-link" onclick="openPage('enhancement-three')">enhancement-three.md</span>
+<span class="clickable-link" onclick="openPage('enhancement-three.md')">enhancement-three.md</span>
     </code>
   </div>
   <div class="status-bar">Ready</div>
