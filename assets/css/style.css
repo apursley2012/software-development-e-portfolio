@@ -181,14 +181,18 @@ p {
 }
 
 .clickable-link {
-  color: #adff9a;
+  color: #A1A1A1;
   text-decoration: underline;
   cursor: pointer;
   transition: color 0.2s ease;
+  text-shadow:
+    0 0 8px #2bd852,
+    1px 1px 5px #a9a9a9,
+    -1px -1px 5px #3a3a3a;
 }
 
 .clickable-link:hover {
-  color: #ffffff;
+  color: #adff9a ;
 }
 
 .status-bar {
