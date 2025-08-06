@@ -21,8 +21,10 @@ main {
 }
 
 .site-footer {
- width: 100%;
+  width: 100%;
   margin-top: auto; /* push footer to bottom */
+  display: flex;
+  flex-direction: column;
   cursor: pointer;
   font-family: 'Share Tech Mono', monospace;
 }
