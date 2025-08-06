@@ -91,8 +91,9 @@ p {
 /* Terminal Window */
 .terminal-window {
   background-color: #d8d9da;
+  margin: 32px auto;  /* vertical margin + horizontal centering */
+  box-sizing: border-box;
   padding: 2.5px;
-  margin: 32px;
   max-width: 900px;
   cursor: pointer;
   font-family: 'Share Tech Mono', monospace;
@@ -319,7 +320,7 @@ p {
   font-size: 14px;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
   line-height: 1.5;
   text-shadow:
     0 0 8px #2bd852,
