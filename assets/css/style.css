@@ -277,9 +277,11 @@ p {
 
 .footer-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: column;   /* stack contents top→bottom */
+  justify-content: flex-end;/* push content to bottom */
+  align-items: center;      /* center content horizontally */
   width: 100%;
-  margin: 4px;
+  margin: 8px;
   border-top: 2px outset #ffffff;
   border-left: 2px outset #ffffff;
   border-right: 2px outset #404040;
@@ -305,29 +307,15 @@ p {
 }
 
 .footer-content {
-  background-color: #000000;
-  color: #00ff00;
-  padding: 2px;
-  font-size: 16px;
-  text-align: center;
-  line-height: 1.5;
-  min-height: 150px;
-}
-
-.footer-content code {
   font-family: 'Share Tech Mono', monospace;
-  background-color: #000000;
-  color: #00ff00;
-  flex-direction: column;   /* stack contents top→bottom */
-  justify-content: flex-end;/* push content to bottom */
-  align-items: center;      /* center content horizontally */
-  padding: 8px;
-  line-height: 1.5;
-  display: flex;
   color: #33ff00;
   background: #000000;
   white-space: pre-wrap;
-  font-size: 12px;
+  padding: 8px
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   line-height: 1.5;
   text-shadow:
     0 0 8px #2bd852,
