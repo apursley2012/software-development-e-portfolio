@@ -285,11 +285,10 @@ p {
 
 .footer-container {
   display: flex;
-  flex-direction: column;   /* stack contents top→bottom */
   justify-content: flex-end;/* push content to bottom */
   align-items: center;      /* center content horizontally */
   width: 100%;
-  margin: 8px;
+  margin: 4px;
   border-top: 2px outset #ffffff;
   border-left: 2px outset #ffffff;
   border-right: 2px outset #404040;
@@ -301,7 +300,7 @@ p {
 .footer-header {
   background: linear-gradient(to right, #808080, #909090, #a0a0a0, #b0b0b0, #c0c0c0);
   color: #000000;
-  padding: 4px 6px;
+  padding: 4px 4px;
   font-size: 18px;
   display: flex;
   justify-content: center;
@@ -319,10 +318,8 @@ p {
   color: #33ff00;
   background: #000000;
   white-space: pre-wrap;
-  padding: 4px
-  font-size: 14px;
-  display: flex;
-  justify-content: center;
+  padding: 4px 4px
+  font-size: 0.75rem;
   line-height: 1.5;
   text-shadow:
     0 0 8px #2bd852,
