@@ -326,8 +326,8 @@ p {
   padding: 8px;              
   font-size: 14px;
   display: flex;
-  justify-content: center;
-  align-items: flex-end;
+  justify-content: flex-end;
+  align-items: center;
   line-height: 1.5;
   text-shadow:
     0 0 8px #2bd852,
