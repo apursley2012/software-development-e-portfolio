@@ -34,24 +34,24 @@
 </footer>
 
   <script>
-    // Live date/time
-    document.getElementById('date-time').textContent = new Date().toLocaleString();
+  document.addEventListener("DOMContentLoaded", function () {
+    const target = document.getElementById("typed-text");
+    if (!target) return;
 
-    // Typing effect for H1
-    document.addEventListener("DOMContentLoaded", function () {
-      const target = document.getElementById("typed-text");
-      if (!target) return;
-      const text = target.textContent.trim();
-      target.textContent = "";
-      let i = 0;
-      function type() {
-        if (i < text.length) {
-          target.textContent += text.charAt(i++);
-          setTimeout(type, 140);
-        }
+    const text = (target.textContent || target.innerText || "").trim();
+    console.log("Typing:", text); // Optional: check what was captured
+    target.textContent = "";
+
+    let i = 0;
+    function type() {
+      if (i < text.length) {
+        target.textContent += text.charAt(i++);
+        setTimeout(type, 140);
       }
-      type();
-    });
-  </script>
+    }
+
+    type();
+  });
+</script>
 </body>
 </html>
