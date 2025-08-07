@@ -7,11 +7,11 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background-color: #205A65;
+  background-color: #339989;
   color: #ffffff;
   font-family: 'Share Tech Mono', monospace;
 }
-
+ 
 /* Let the main content grow to push the footer down */
 main {
   flex-grow: 1;
@@ -287,7 +287,6 @@ p {
 
 /* Footer internals */
 .footer-container {
-  position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
