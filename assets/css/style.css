@@ -14,11 +14,10 @@ body {
  
 /* Let the main content grow to push the footer down */
 main {
-  flex-grow: 1;
+  flex: 1 0 auto;
   width: 100%;
-  max-width: 1000px;
   margin: 0 auto;
-  padding: 2rem;
+  padding-bottom: 2rem;
 }
 
 /*──────────────────────────────────────────────────────────────────
@@ -29,14 +28,6 @@ main {
   width: 100%;
   margin: 32px auto;
   box-sizing: border-box;
-}
-
-/*────────── Footer ──────────*/
-.site-footer {
-  width: 100%;
-  cursor: pointer;
-  font-family: 'Share Tech Mono', monospace;
-}
 
 /*──────────────────────────────────────────────────────────────────
   Your existing styles unchanged except for the one semicolon fix
@@ -301,7 +292,7 @@ p {
   border-right: 2px outset #404040;
   border-bottom: 2px outset #404040;
   background-color: #d8d9da;
-  box-sizing: border-box;
+  
 }
 
 .footer-header {
@@ -309,7 +300,6 @@ p {
   color: #000000;
   padding: 4px 6px;
   font-size: 18px;
-  display: flex;
   width: 100%;
   justify-content: center;
   align-items: center;
@@ -322,15 +312,12 @@ p {
 }
 
 .footer-content {
-  display: block;
   color: #33ff00;
   background: #000000;
-  white-space: pre-wrap;
   font-family: 'Share Tech Mono', monospace;
   align-items: center;
   line-height: 1.5;
   font-size: 14px;
-  box-sizing: border-box;
   text-shadow:
     0 0 8px #2bd852,
     1px 1px 5px #a9a9a9,
