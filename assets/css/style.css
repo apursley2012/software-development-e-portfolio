@@ -27,7 +27,6 @@ main {
 .terminal-window,
 .markdown-content {
   width: 100%;
-  max-width: 900px;
   margin: 32px auto;
   box-sizing: border-box;
 }
@@ -308,6 +307,7 @@ p {
   padding: 4px 6px;
   font-size: 18px;
   display: flex;
+  width: 100%
   justify-content: center;
   align-items: center;
   font-family: 'Share Tech Mono', monospace;
