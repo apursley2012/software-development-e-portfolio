@@ -289,7 +289,6 @@ p {
 .footer-container {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
   align-items: center;
   width: 100%;
   margin: 8px;
@@ -308,7 +307,7 @@ p {
   font-size: 18px;
   display: flex;
   width: 100%;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
   font-family: 'Share Tech Mono', monospace;
   font-weight: bold;
@@ -326,8 +325,9 @@ p {
   font-size: 14px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
+  white-space: pre-wrap;
   line-height: 1.5;
   text-shadow:
     0 0 8px #2bd852,
