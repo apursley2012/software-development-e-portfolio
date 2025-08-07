@@ -322,10 +322,10 @@ p {
   font-family: 'Share Tech Mono', monospace;
   color: #33ff00;
   background: #000000;
-  white-space: pre-wrap;
   padding: 8px;              
   font-size: 14px;
   display: flex;
+  flex-direction: column;
   justify-content: flex-end;
   align-items: center;
   line-height: 1.5;
