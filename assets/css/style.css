@@ -108,7 +108,6 @@ p {
 
 .terminal-buttons {
     display: flex;
-	margin-left: auto;
 }
 
 .terminal-button {
@@ -306,7 +305,7 @@ p {
 	}
 	
 	.terminal-buttons {
-	    display: flex-end;
+	    display: space-between;
 	}
 	
 	.terminal-button {
@@ -380,85 +379,3 @@ p {
 	    font-family: 'Share Tech Mono', monospace;
 	}
 }
-	
-/*
-
-.footer-window {
-    background-color: #d8d9da;
-    justify-content: center;
-    padding: 2.5px;
-    font-family: 'Share Tech Mono', monospace;
-    width: 100%;
- 	margin: 0;              
-  	box-sizing: border-box;
-    justify-content: center;
-    border-top: 2px outset #ffffff;
-    border-left: 2px outset #ffffff;
-    border-right: 2px outset #404040;
-    border-bottom: 2px outset #404040;
-}
-
-.footer-header {
-    background: linear-gradient(to right, #808080, #909090, #a0a0a0, #b0b0b0, #c0c0c0);
-    color: #000000;
-    width: 100%;
-    padding: 4px 6px;
-    font-size: 18px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    font-family: 'Share Tech Mono', monospace;
-    font-weight: bold;
-    border-top: 2px inset #ffffff;
-    border-left: 2px inset #ffffff;
-    border-right: 2px inset #404040;
-    border-bottom: 2px inset #404040;
-}
-
-.footer-content {
-	background-color: #000000;
-    color: #00ff00;
-    padding: 2px;
-    font-family: 'Share Tech Mono', monospace;
-    font-size: 16px;
-    line-height: 1.5;
-    width: 100%;
-    box-sizing: border-box;
-}
-
-.footer-content code {
-    display: block;
-    width: 100%;
-    box-sizing: border-box;
-    color: #33ff00;
-    background: #000000;
-    white-space: pre-wrap;
-    font-family: 'Share Tech Mono', monospace;
-    font-size: 14px;
-    line-height: 1.5;
-    text-shadow:
-        0 0 8px #2bd852,
-        1px 1px 5px #a9a9a9,
-        -1px -1px 5px #3a3a3a;
-}
-
-.footer-status-bar {
-    background: linear-gradient(to right, #c0c0c0, #e0e0e0);
-    padding: 0.25rem 0.5rem;
-    color: #000000;
-    font-size: 16px;
-    text-align: left;
-    border-top: 1px solid #808080;
-    font-family: 'Share Tech Mono', monospace;
-}
-
-html,
-body {
-    height: 100%;
-}
-
-.site-footer {
-    width: 100%;
-}
-*/
