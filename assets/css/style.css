@@ -275,7 +275,7 @@ font-family: 'Share Tech Mono', monospace;
 display: flex;
 flex-direction: column;
 width: 100%;
-margin: 0;
+margin: 4px;
 border-top: 2px outset #ffffff;
 border-left: 2px outset #ffffff;
 border-right: 2px outset #404040;
