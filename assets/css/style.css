@@ -77,7 +77,7 @@ margin-bottom: 3rem;
 background-color: #d8d9da;
 justify-content: center;
 padding: 2.5px;
-margin: 32px;
+margin: 32px auto;
 max-width: 900px;
 cursor: pointer;
 font-family: 'Share Tech Mono', monospace;
