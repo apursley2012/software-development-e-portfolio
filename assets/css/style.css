@@ -280,6 +280,7 @@ border-top: 2px outset #ffffff;
 border-left: 2px outset #ffffff;
 border-right: 2px outset #Ésà404040;
 border-bottom: 2px outset #404040;
+}
 
 .footer-header {
 background: linear-gradient(to right, #808080, #909090, #a0a0a0, #b0b0b0, #c0c0c0);
@@ -317,9 +318,9 @@ font-family: 'Share Tech Mono', monospace;
 font-size: 0.9rem;
 line-height: 1;
 text-shadow:
-0 0 8px #2bd852,         /* Gentle glow */
-1px 1px 5px #a9a9a9,     /* Soft shadow bottom-right */
--1px -1px 5px #3a3a3a;   /* Slight top-left contrast */
+0 0 8px #2bd852,         
+1px 1px 5px #a9a9a9,     
+-1px -1px 5px #3a3a3a;  
 }
 
 .footer-status bar {
@@ -334,8 +335,6 @@ font-family: 'Share Tech Mono', monospace;
 
 /* --- Only what's necessary to keep footer at bottom and full width --- */
 html, body { height: 100%; }
-body { display: flex; flex-direction: column; min-height: 100vh; }
-main { flex: 1; }
 .site-footer { width: 100%; }
 /*
 .site-footer {
