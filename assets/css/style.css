@@ -10,7 +10,6 @@ background-color: #123456;
 color: #ffffff;
 font-family: 'Share Tech Mono', monospace;
 margin: 0;
-padding: 2rem;
 display: flex;
 justify-content: center;
 align-items: flex-start;
@@ -20,6 +19,7 @@ min-height: 100vh;
 main {
 width: 100%;
 max-width: 1000px;
+  padding: 2rem; 
 }
 
 h1 {
@@ -272,7 +272,7 @@ font-family: 'Share Tech Mono', monospace;
 display: flex;
   flex-direction: column;
   width: 100%;
-margin: 4px;
+margin: 0;
 border-top: 2px outset #ffffff;
 border-left: 2px outset #ffffff;
 border-right: 2px outset #404040;
@@ -307,7 +307,9 @@ padding: 2px;
 font-size: 16px;
 text-align: center;
 line-height: 1.5;
-min-height: 150px;
+display: flex;               /* ADDED */
+justify-content: center;     /* ADDED */
+align-items: center; 
 }
 
 
@@ -329,6 +331,7 @@ body {
 display: flex;
 flex-direction: column;
 min-height: 100vh;
+align-items: stretch; 
 }
 
 main {
