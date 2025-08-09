@@ -266,6 +266,9 @@ margin-top: auto;
 }
 
 .footer-container {
+background-color: #d8d9da;
+justify-content: center;
+padding: 2.5px;
 font-family: 'Share Tech Mono', monospace;
 display: flex;
 flex-direction: column;
@@ -277,7 +280,7 @@ border-top: 2px outset #ffffff;
 border-left: 2px outset #ffffff;
 border-right: 2px outset #Ésà404040;
 border-bottom: 2px outset #404040;
-background-color: #iq::-
+
 .footer-header {
 background: linear-gradient(to right, #808080, #909090, #a0a0a0, #b0b0b0, #c0c0c0);
 color: #000000;
