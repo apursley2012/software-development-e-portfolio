@@ -274,7 +274,7 @@ p {
 		box-sizing: border-box;
 		width: 100%;
 	    background-color: #d8d9da;
-	    justify-content: space-between;
+	    justify-content: center;
 	    padding: 2.5px;
 	    cursor: pointer;
 	    font-family: 'Share Tech Mono', monospace;
@@ -294,7 +294,7 @@ p {
 	    color: #000000;
 	    padding: 4px 6px;
 	    font-size: 18px;
-	    display: border-box;
+	    display: flex-box;
 	    justify-content: space-between;
 	    align-items: center;
 	    font-family: 'Share Tech Mono', monospace;
