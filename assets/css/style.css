@@ -305,7 +305,7 @@ p {
 	}
 	
 	.terminal-buttons {
-	    display: space-between;
+	    display: flex;
 	}
 	
 	.terminal-button {
