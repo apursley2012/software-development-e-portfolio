@@ -11,7 +11,9 @@ color: #ffffff;
 font-family: 'Share Tech Mono', monospace;
 margin: 0;
 display: flex;
+flex-direction: column;
 justify-content: center;
+align-items: center;
 min-height: 100vh;
 }
 
@@ -271,8 +273,8 @@ font-family: 'Share Tech Mono', monospace;
 
 .footer-container {
 display: flex;
-  flex-direction: column;
-  width: 100%;
+flex-direction: column;
+width: 100%;
 margin: 0;
 border-top: 2px outset #ffffff;
 border-left: 2px outset #ffffff;
@@ -285,10 +287,11 @@ background-color: #d8d9da;
 .footer-header {
 background: linear-gradient(to right, #808080, #909090, #a0a0a0, #b0b0b0, #c0c0c0);
 color: #000000;
+width: 100%;
 padding: 4px 6px; 
 font-size: 18px;
 display: flex;
-  flex-direction: column;
+flex-direction: column;
 justify-content: center;
 align-items: center;
 font-family: 'Share Tech Mono', monospace;
