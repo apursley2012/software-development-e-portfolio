@@ -12,14 +12,14 @@ font-family: 'Share Tech Mono', monospace;
 margin: 0;
 display: flex;
 justify-content: center;
-align-items: flex-start;
 min-height: 100vh;
 }
 
 main {
 width: 100%;
 max-width: 1000px;
-  padding: 2rem; 
+padding: 2rem; 
+justify-content: center;
 }
 
 h1 {
