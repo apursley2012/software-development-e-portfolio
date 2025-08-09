@@ -75,6 +75,7 @@ margin-bottom: 3rem;
 /* Terminal Window */
 .terminal-window {
 background-color: #d8d9da;
+justify-content: center;
 padding: 2.5px;
 margin: 32px;
 max-width: 900px;
@@ -307,8 +308,8 @@ padding: 2px;
 font-size: 16px;
 text-align: center;
 line-height: 1.5;
-display: flex;               /* ADDED */
-justify-content: center;     /* ADDED */
+display: flex;               
+justify-content: center;     
 align-items: center; 
 }
 
