@@ -108,6 +108,7 @@ p {
 
 .terminal-buttons {
     display: flex;
+	margin-left: auto;
 }
 
 .terminal-button {
