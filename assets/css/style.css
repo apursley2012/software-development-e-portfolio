@@ -304,43 +304,7 @@ p {
 	    border-bottom: 2px inset #404040;
 	}
 	
-	.terminal-buttons {
-	    display: flex;
-	}
-	
-	.terminal-button {
-	    width: 20px;
-	    height: 20px;
-	    border-top: 2px outset #fefefe;
-	    border-left: 2px outset #fefefefe;
-	    border-right: 2px outset #505050;
-	    border-bottom: 2px outset #505050;
-	    background-color: #d8d9da;
-	    font-size: 0.6rem;
-	    display: flex;
-	    align-items: center;
-	    justify-content: center;
-	    cursor: pointer;
-	    font-family: 'Share Tech Mono', monospace;
-	    font-weight: bold;
-	}
-	
-	.terminal-button:active {
-	    border: 2px inset #d8d9da;
-	}
-	
-	.terminal-button.maximize {
-	    margin-right: 4px;
-	}
-	
-	.terminal-button i {
-	    font-size: 0.75rem;
-	    color: black;
-	    line-height: 1;
-	    align-items: center;
-	    justify-content: center;
-	}
-	
+
 	.footer-content {
 	    background-color: #000000;
 	    color: #00ff00;
