@@ -311,12 +311,9 @@ border-bottom: 2px inset #404040;
 background-color: #000000;
 color: #00ff00;
 padding: 2px;
+font-family: 'Share Tech Mono', monospace;
 font-size: 16px;
-text-align: center;
 line-height: 1;
-display: block;             
-justify-content: center;     
-align-items: center; 
 }
 
 .footer-content code {
