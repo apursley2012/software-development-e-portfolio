@@ -31,6 +31,7 @@
     }
   </style>
 
+    <!-- Typing text script -->
 <script>
   document.addEventListener("DOMContentLoaded", function () {
     const target = document.getElementById("typed-text");
@@ -51,6 +52,26 @@
     typeChar();
   });
 </script>
+   <!-- Last updated footer script -->
+<script>
+(function () {
+  // document.lastModified comes from the actual file timestamp served by GitHub Pages
+  var el = document.getElementById('last-updated');
+  if (!el) return;
+
+  var d = new Date(document.lastModified);
+  // Format nicely in the viewer’s locale (e.g., “August 9, 2025, 7:42 PM”)
+  var formatted = d.toLocaleString(undefined, {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+    hour: '2-digit',
+    minute: '2-digit'
+  });
+
+  el.textContent = formatted;
+})();
+</script>
 </head>
 
 
@@ -58,13 +79,36 @@
         {{ content }}
   </main>
   <body>
-   <footer class="site-footer">
-  <div class="footer-container">
-    <div class="terminal-header footer-header">System Message</div>
-    <div class="terminal-content footer-content">
-      <p>&copy; 2025 Alysha Pursley. Proudly built one line of code (and one late night) at a time.</p>
-    </div>
-  </div>
-</footer>
-</body>
+    <footer class="site-footer">
+      <div class="footer-container">
+        <div class="footer-header"> 
+          <span>System Message</span>
+          <div class="terminal-buttons">
+            <div class="terminal-button minimize">
+              <i class="fa-solid fa-window-minimize"></i>
+            </div>
+            <div class="terminal-button maximize">
+              <i class="fa-regular fa-window-maximize"></i>
+            </div>
+            <div class="terminal-button close">
+              <i class="fa-solid fa-x"></i>
+            </div>
+          </div>
+          <div class="footer-content">
+            <code>
+              Python 3.11.4 (tags/v3.11.4)  
+              &gt;&gt;&gt; &copy; 2025 Alysha Pursley
+              &gt;&gt;&gt; Coded with coffee, compiled with chaos. 
+              &gt;&gt;&gt; Debugged more than it was coded. Still proud.
+              &gt;&gt;&gt; This project is fully responsive… to snacks, naps, and coffee breaks.
+              &gt;&gt;&gt; Guaranteed 97% bug-free (the other 3% are features)
+              &gt;&gt;&gt; If something’s broken, just know it was working perfectly as of <span id="last-updated"></span> . Probably. 
+            </code>
+          </div>
+          <div class="footer-status bar">Ready
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
