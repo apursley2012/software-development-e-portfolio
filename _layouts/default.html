@@ -3,55 +3,68 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>{{ page.title | default: site.title }}</title>
+    <title>{{ page.title | default: site.title }}</title>
+    
+    <!-- Connect/Import Google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+          
+    <!-- Google Fonts Stylesheets -->
+    <link href="https://fonts.googleapis.com/css2?family=Anta&family=Atma:wght@300;400;500;600;700&family=Atomic+Age&family=Audiowide&family=BhuTuka+Expanded+One&family=Bungee+Shade&family=Coral+Pixels&family=DotGothic16&family=Doto:wght@100..900&family=Handjet:wght@100..900&family=Honk&family=Jersey+15&family=Londrina+Shadow&family=Major+Mono+Display&family=Pixelify+Sans:wght@400..700&family=Press+Start+2P&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&family=Raleway+Dots&family=Rampart+One&family=Rubik+Glitch&family=Sankofa+Display&family=Share+Tech+Mono&family=Silkscreen:wght@400;700&family=Sirin+Stencil&family=Sixtyfour&family=Sixtyfour+Convergence&family=Stalinist+One&family=Syne+Mono&family=Tektur:wght@400..900&family=Tourney:ital,wght@0,100..900;1,100..900&family=VT323&family=Vast+Shadow&family=Workbench&display=swap" rel="stylesheet">
+      <!-- Font Awesome Kit -->
+      
+     <script src="https://kit.fontawesome.com/3564f42dfc.js" crossorigin="anonymous"></script>
+     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  <!-- CSS -->
+  <link rel="stylesheet" href="/assets/css/style.css">
 
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <style>
+   
+    body {
+      visibility: visible; 
+    }
 
-  <!-- Font Awesome -->
-  <script src="https://kit.fontawesome.com/3564f42dfc.js" crossorigin="anonymous"></script>
+    .terminal-window,
+    .markdown-content,
+    .terminal-header,
+    .status-bar {
+      visibility: visible;
+    }
+  </style>
 
-  <!-- Main stylesheet -->
-  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
-</head>
-<body>
-  <main>
-    {{ content }}
-  </main>
-
- <footer class="site-footer">
-  <div class="footer-container">
-    <div class="footer-header">System Message</div>
-    <div class="footer-content">
-      <div>
-        <p>Proudly built one line of code (and one late night) at a time!</p>
-        <br>
-        <p>&copy; 2025 Alysha Pursley. All rights reserved.  |  8/6/2025, 8:58:59 PM</p>    
-      </div>
-    </div>
-  </div>
-</footer>
-
-  <script>
+<script>
   document.addEventListener("DOMContentLoaded", function () {
     const target = document.getElementById("typed-text");
     if (!target) return;
 
-    const text = (target.textContent || target.innerText || "").trim();
-    console.log("Typing:", text); // Optional: check what was captured
+    const originalText = target.textContent.trim();
     target.textContent = "";
 
     let i = 0;
-    function type() {
-      if (i < text.length) {
-        target.textContent += text.charAt(i++);
-        setTimeout(type, 140);
+    function typeChar() {
+      if (i < originalText.length) {
+        target.textContent += originalText.charAt(i);
+        i++;
+        setTimeout(typeChar, 60);
       }
     }
 
-    type();
+    typeChar();
   });
 </script>
+</head>
+
+
+  <main>
+        {{ content }}
+  </main>
+  <body>
+   <footer class="site-footer">
+  <div class="footer-container">
+    <div class="terminal-header footer-header">System Message</div>
+    <div class="terminal-content footer-content">
+      <p>© 2025 Alysha Pursley. Proudly built one line of code (and one late night) at a time.</p>
+    </div>
+  </div>
+</footer>
 </body>
 </html>
