@@ -270,7 +270,7 @@ p {
     margin-top: auto;
 
 	/* Terminal Window */
-	.terminal-window {
+	.footer-window {
 		box-sizing: border-box;
 		width: 100%;
 	    background-color: #d8d9da;
@@ -285,11 +285,11 @@ p {
 	    border-bottom: 2px outset #404040;
 	}
 	
-	.terminal-window:hover {
+	.footer-window:hover {
 	    border: 5px solid #303030;
 	}
 	
-	.terminal-header {
+	.footer-header {
 	    background: linear-gradient(to right, #808080, #909090, #a0a0a0, #b0b0b0, #c0c0c0);
 	    color: #000000;
 	    padding: 4px 6px;
@@ -342,7 +342,7 @@ p {
 	    justify-content: center;
 	}
 	
-	.terminal-content {
+	.footer-content {
 	    background-color: #000000;
 	    color: #00ff00;
 	    padding: 2px;
@@ -352,7 +352,7 @@ p {
 	    min-height: 150px;
 	}
 	
-	.terminal-content code {
+	.footer-content code {
 	    display: block;
 	    color: #33ff00;
 	    background: #000000;
@@ -370,7 +370,7 @@ p {
 	}
 	
 	
-	.status-bar {
+	.footer-status-bar {
 	    background: linear-gradient(to right, #c0c0c0, #e0e0e0);
 	    padding: 0.25rem 0.5rem;
 	    color: #000000;
