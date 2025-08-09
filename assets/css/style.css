@@ -271,16 +271,13 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 width: 100%;
-margin: 4px;
+margin: 0; /* CHANGED from 4px to 0 so the border touches page edges */
 padding: 2.5px;
 border-top: 2px outset #ffffff;
 border-left: 2px outset #ffffff;
-border-right: 2px outset #404040;
+border-right: 2px outset #Ésà404040;
 border-bottom: 2px outset #404040;
-background-color: #d8d9da;
-  box-sizing: border-box;
-}
-
+background-color: #iq::-
 .footer-header {
 background: linear-gradient(to right, #808080, #909090, #a0a0a0, #b0b0b0, #c0c0c0);
 color: #000000;
@@ -331,3 +328,83 @@ text-align: left;
 border-top: 1px solid #808080;
 font-family: 'Share Tech Mono', monospace;
 }
+
+/* --- Only what's necessary to keep footer at bottom and full width --- */
+html, body { height: 100%; }
+body { display: flex; flex-direction: column; min-height: 100vh; }
+main { flex: 1; }
+.site-footer { width: 100%; }
+/*
+.site-footer {
+cursor: pointer;
+font-family: 'Share Tech Mono', monospace;
+width: 100%;
+margin-top: auto;
+}
+
+.footer-container {
+font-family: 'Share Tech Mono', monospace;
+display: flex;
+flex-direction: column;
+justify-content: center;
+width: 100%;
+margin: 4px;
+padding: 2.5px;
+border-top: 2px outset #ffffff;
+border-left: 2px outset #ffffff;
+border-right: 2px outset #404040;
+border-bottom: 2px outset #404040;
+background-color: #d8d9da;
+  box-sizing: border-box;
+}
+
+.footer-header {
+background: linear-gradient(to right, #808080, #909090, #a0a0a0, #b0b0b0, #c0c0c0);
+color: #000000;
+width: 100%;
+padding: 4px 6px; 
+font-size: 18px;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+font-family: 'Share Tech Mono', monospace;
+font-weight: bold;
+border-top: 2px inset #ffffff;     
+border-left: 2px inset #ffffff; 
+border-right: 2px inset #404040;
+border-bottom: 2px inset #404040;
+}
+
+.footer-content {
+background-color: #000000;
+color: #00ff00;
+padding: 2px;
+font-family: 'Share Tech Mono', monospace;
+font-size: 16px;
+line-height: 1;
+}
+
+.footer-content code {
+display: block;
+color: #33ff00;
+background: #000000;
+white-space: pre-wrap;
+font-family: 'Share Tech Mono', monospace;
+font-size: 0.9rem;
+line-height: 1;
+text-shadow:
+0 0 8px #2bd852,         
+1px 1px 5px #a9a9a9,     
+-1px -1px 5px #3a3a3a;
+}
+
+.footer-status bar {
+background: linear-gradient(to right, #c0c0c0, #e0e0e0);
+padding: 0.25rem 0.5rem;
+color: #000000;
+font-size: 0.7rem;
+text-align: left;
+border-top: 1px solid #808080;
+font-family: 'Share Tech Mono', monospace;
+}*/
