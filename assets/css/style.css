@@ -271,10 +271,11 @@ p {
 
 	/* Terminal Window */
 	.terminal-window {
+		box-sizing: border-box;
+		width: 100%;
 	    background-color: #d8d9da;
 	    justify-content: center;
 	    padding: 2.5px;
-	    margin: 32px auto;
 	    max-width: 900px;
 	    cursor: pointer;
 	    font-family: 'Share Tech Mono', monospace;
