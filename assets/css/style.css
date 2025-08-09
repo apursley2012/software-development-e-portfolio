@@ -274,7 +274,7 @@ p {
 		box-sizing: border-box;
 		width: 100%;
 	    background-color: #d8d9da;
-	    justify-content: center;
+	    justify-content: space-betweeen;
 	    padding: 2.5px;
 	    cursor: pointer;
 	    font-family: 'Share Tech Mono', monospace;
@@ -282,7 +282,7 @@ p {
 	    border-left: 2px outset #ffffff;
 	    border-right: 2px outset #404040;
 	    border-bottom: 2px outset #404040;
-		display: grid;
+		
 	}
 	
 	.footer-window:hover {
