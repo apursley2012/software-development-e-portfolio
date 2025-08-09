@@ -10,19 +10,14 @@ background-color: #123456;
 color: #ffffff;
 font-family: 'Share Tech Mono', monospace;
 margin: 0;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
+align-items: stretch;
 }
 
 main {
 width: 100%;
 flex: 1;
-max-width: 1000px;
-padding: 2rem; 
-justify-content: center;
-align-items: center;
+/*justify-content: center;
+align-items: center;*/
 }
 
 h1 {
