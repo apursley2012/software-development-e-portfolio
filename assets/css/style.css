@@ -262,9 +262,7 @@ text-shadow: 0 0 5px #ccff00;
 cursor: pointer;
 font-family: 'Share Tech Mono', monospace;
 width: 100%;
-background-color: transparent;
 margin-top: auto;
-font-family: 'Share Tech Mono', monospace;
 }
 
 .footer-container {
@@ -272,7 +270,6 @@ font-family: 'Share Tech Mono', monospace;
 display: flex;
 flex-direction: column;
 justify-content: center;
-align-items: stretch;
 width: 100%;
 margin: 4px;
 padding: 2.5px;
