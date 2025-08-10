@@ -5,14 +5,14 @@ title: Enhancement Three Demo
 
 <h1 id="typed-text">Corner Grocer App Demo</h1>
 
-<p>This is a <b><em>simulated demonstration</em></b> of the Corner Grocer Enhancement 3, which connects the application to a SQLite database for persistent storage.
-  <br>
-Since GitHub Pages is a <b><em>static hosting service</em></b>, it can’t run an actual database or backend code in real time.  
-  <br>
-For this demo, the database interactions have been <b><em>mocked</em></b> so you can still explore the app’s functionality and see how the UI works as if it were connected to a real database.  
+<div class="intro-text">
+This is a <b><em>simulated demonstration</em></b> of the Corner Grocer App for Enhancement 3 - Databases, which connects the application to a SQLite database for persistent storage. However, since GitHub Pages is a <b><em>static hosting service</em></b>, it can’t run an actual database or backend code in real time.  
+  
+  <br> 
+For this demo, the database interactions have been <b><em>mocked</em></b> so you can still explore the app’s functionality and see how the UI works as if it were connected to a real database. The original implementation <b><em>runs with a real SQLite database</em></b> when hosted in an environment that supports server-side processing.  
+
 <br>
-The original implementation **runs with a real SQLite database** when hosted in an environment that supports server-side processing.  
-I wanted to showcase this in a way that took it from just a console app, to what feels and works like a real functional app. I think this demo accomplishes that well, even if it can't run the actual database part here on GitHub.</p>
+I wanted to showcase this in a way that took it from just a console app, to what feels and works like a real functional app. I think this demo accomplishes that well, even if it can't run the actual database part here on GitHub.</div>
 
 <div class="app-container" style="margin: 2rem 0; border-radius: 12px; overflow: hidden; box-shadow: 0 8px 32px rgba(0,0,0,0.12);">
   <iframe
