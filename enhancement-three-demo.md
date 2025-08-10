@@ -3,7 +3,7 @@ layout: default
 title: Enhancement Three Demo
 ---
 
-<h1>Enhancement Three: Corner Grocer App Demo</h1>
+<h1 id="typed-text">Corner Grocer App Demo</h1>
 
 <p>This is a live demo of my Corner Grocer application, rewritten in Python and backed by SQLite.  You can sort items, search frequencies, and see the results update in real time.</p>
 
