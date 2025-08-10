@@ -325,13 +325,13 @@ p {
 		text-align: left;
 	    line-height: 1.5;
 	    text-shadow:
-	        0 0 8px #2bd852,
-	        /* Gentle glow */
-	        1px 1px 5px #a9a9a9,
-	        /* Soft shadow bottom-right */
-	        -1px -1px 5px #3a3a3a;
-	      	/* Slight top-left contrast */
-	}
+        0 0 8px #2bd852,
+        /* Gentle glow */
+        1px 1px 5px #a9a9a9,
+        /* Soft shadow bottom-right */
+        -1px -1px 5px #3a3a3a;
+      	/* Slight top-left contrast */
+}
 	
 	
 	.footer-status-bar {
