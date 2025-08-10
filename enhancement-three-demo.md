@@ -6,10 +6,10 @@ title: Enhancement Three Demo
 <h1 id="typed-text">Corner Grocer App Demo</h1>
 
 <div class="intro-text">
-This is a <b><em>simulated demonstration</em></b> of the Corner Grocer App for Enhancement 3 - Databases, which connects the application to a SQLite database for persistent storage. However, since GitHub Pages is a <b><em>static hosting service</em></b>, it can’t run an actual database or backend code in real time.  
+This is a <b><em>simulated demonstration</em></b> of the Corner Grocer App for Enhancement 3 - Databases, which connects the application to an SQLite database for persistent storage. However, since GitHub Pages is a <b><em>static hosting service</em></b>, it can’t run an actual database or backend code in real time.  
   
   <br> 
-For this demo, the database interactions have been <b><em>mocked</em></b> so you can still explore the app’s functionality and see how the UI works as if it were connected to a real database. The original implementation <b><em>runs with a real SQLite database</em></b> when hosted in an environment that supports server-side processing.  
+For this demo, the database interactions have been <b><em>mocked</em></b> so you can still explore the app’s functionality and see how the UI works as if it were connected to a real database. The original implementation is a console app that runs directly in the code terminal, and it <b><em>runs with a real SQLite database</em></b> when hosted in an environment that supports server-side processing.  
 
 <br>
 I wanted to showcase this in a way that took it from just a console app, to what feels and works like a real functional app. I think this demo accomplishes that well, even if it can't run the actual database part here on GitHub.</div>
