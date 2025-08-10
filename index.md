@@ -135,7 +135,7 @@ Opening file: enhancement-three.md ...
 
 <div class="terminal-window">
   <div class="terminal-header">
-    <span>Corner Grocer Demo - Enhancement Three</span>
+    <span>Enhancement Three Demo</span>
     <div class="terminal-buttons">
       <div class="terminal-button minimize">
         <i class="fa-solid fa-window-minimize"></i>
@@ -152,7 +152,7 @@ Opening file: enhancement-three.md ...
     <code>
       apursley2012@ePortfolio-git: python  
       Python 3.11.4 (tags/v3.11.4)  
-      &gt;&gt;&gt; # Open and read Corner Grocer Demo - Enhancement Three 
+      &gt;&gt;&gt; # Open and read the Enhancement Three Demo
       &gt;&gt;&gt; path = r"software-development-e-portfolio/enhancement-three-demo.md"  
       &gt;&gt;&gt; file = open(path, "r")  
       &gt;&gt;&gt; print(file.read())  
