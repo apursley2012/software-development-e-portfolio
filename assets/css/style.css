@@ -10,6 +10,8 @@ body {
     color: #ffffff;
     font-family: 'Share Tech Mono', monospace;
     margin: 0;
+	justify-content: center;
+	align-items: center;
 }
 
 main {
@@ -26,12 +28,12 @@ h1 {
     -webkit-text-stroke: 1px #000000;
     color: #33ff00;
     text-shadow:
-        3px 3px 0 #202020,
-        0 0 8px #2bd852,
+        4px 4px 1px #202020,
+        1 1 9px #2bd852,
         /* Gentle glow */
-        1px 1px 5px #a9a9a9,
+        2px 2px 6px #a9a9a9,
         /* Soft shadow bottom-right */
-        -1px -1px 5px #3a3a3a,
+        -2px -2px 6px #3a3a3a,
         margin-bottom: 1.5rem;
     text-align: center;
 	justify-content: center;
@@ -64,7 +66,7 @@ h3 {
 p {
     font-size: 18px;
     line-height: 1.6;
-    text-align: left;
+    text-align: center;
     margin-bottom: 1rem;
 	justify-content: center;
 	max-width: 900px;
@@ -78,6 +80,7 @@ p {
 	max-width: 900px;
     font-size: 18px;
     margin-bottom: 3rem;
+	align-items: center;
 }
 
 /* Terminal Window */
