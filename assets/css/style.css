@@ -75,6 +75,7 @@ p {
 .intro-text {
     font-family: 'Share Tech Mono', monospace;
     color: #ffffff;
+	margin: 32px auto;
     text-align: center;
 	justify-content: center;
 	max-width: 900px;
