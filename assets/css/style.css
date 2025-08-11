@@ -333,12 +333,12 @@ p {
 	    font-size: 14px;
 		text-align: left;
 	    line-height: 1.5;
-	    text-shadow:
-		0 0 4px #2bd852,
+		text-shadow:
+        0 0 8px #2bd852,
         /* Gentle glow */
-        .75px .75px 2.5px #a9a9a9,
+        1px 1px 5px #a9a9a9,
         /* Soft shadow bottom-right */
-        -0.5px -0.5px 2.5px #3a3a3a;
+        -1px -1px 5px #3a3a3a;
       	/* Slight top-left contrast */
 	}
 	
