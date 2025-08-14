@@ -11,7 +11,7 @@ title: Software Development ePortfolio
 
 <div class="terminal-window">
   <div class="terminal-header">
-    <span>Code Review</span>
+    <span>Professional Self-Assessment</span>
     <div class="terminal-buttons">
       <div class="terminal-button minimize">
         <i class="fa-solid fa-window-minimize"></i>
@@ -26,14 +26,14 @@ title: Software Development ePortfolio
   </div>
   <div class="terminal-content">
     <code>
-      apursley2012@ePortfolio-git:~$ cd software-development-e-portfolio  
-      apursley2012@ePortfolio-git/software-development-e-portfolio$ python    
-      Python 3.11.4 (tags/v3.11.4)  
-      &gt;&gt;&gt; # Open and read Code Review page  
-      &gt;&gt;&gt; path = r"software-development-e-portfolio/code-review.md"  
-      &gt;&gt;&gt; file = open(path, "r")  
-      &gt;&gt;&gt; print(file.read())  
-      Opening file: code-review.md ...  
+apursley2012@ePortfolio-git:~$ cd software-development-e-portfolio  
+apursley2012@ePortfolio-git/software-development-e-portfolio$ python    
+Python 3.11.4 (tags/v3.11.4)  
+>>> # Open and read Code Review page  
+>>> path = r"software-development-e-portfolio/code-review.md"  
+>>> file = open(path, "r")  
+>>> print(file.read())  
+>>> Opening file: code-review.md ...  
       <span class="clickable-link" onclick="openPage('code-review')">code-review.md</span>
     </code>
   </div>
