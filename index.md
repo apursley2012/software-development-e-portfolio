@@ -26,15 +26,46 @@ title: Software Development ePortfolio
   </div>
   <div class="terminal-content">
     <code>
-apursley2012@ePortfolio-git:~$ cd software-development-e-portfolio  
-apursley2012@ePortfolio-git/software-development-e-portfolio$ python    
-Python 3.11.4 (tags/v3.11.4)  
->>> # Open and read my <em>Professional Self-Assessment</em> page  
->>> path = r"software-development-e-portfolio/self-assessment.md"  
->>> file = open(path, "r")  
->>> print(file.read())  
->>> Opening file: self-assessment.md ...  
-      <span class="clickable-link" onclick="openPage('self-assessment')">Read my Professional Self-Assessment!</span>
+  apursley2012@ePortfolio-git:~$ cd software-development-e-portfolio  
+  apursley2012@ePortfolio-git/software-development-e-portfolio$ python    
+  Python 3.11.4 (tags/v3.11.4)  
+  >>> # Open and read my <em>Professional Self-Assessment</em> page  
+  >>> path = r"software-development-e-portfolio/self-assessment.md"  
+  >>> file = open(path, "r")  
+  >>> print(file.read())  
+  >>> Opening file: self-assessment.md ...  
+  <span class="clickable-link" onclick="openPage('self-assessment')">Read my Professional Self-Assessment!</span>
+    </code>
+  </div>
+  <div class="status-bar">Ready</div>
+</div>
+
+<div class="terminal-window">
+  <div class="terminal-header">
+    <span>Enhancement One</span>
+    <div class="terminal-buttons">
+      <div class="terminal-button minimize">
+        <i class="fa-solid fa-window-minimize"></i>
+      </div>
+      <div class="terminal-button maximize">
+        <i class="fa-regular fa-window-maximize"></i>
+      </div>
+      <div class="terminal-button close">
+        <i class="fa-solid fa-x"></i>
+      </div>
+    </div>
+  </div>
+  <div class="terminal-content">
+    <code>
+  apursley2012@ePortfolio-git:~$ cd software-development-e-portfolio  
+  apursley2012@ePortfolio-git/software-development-e-portfolio$ python    
+  Python 3.11.4 (tags/v3.11.4)  
+  >>> # Open and read <em>Enhancement One</em> 
+  >>> path = r"software-development-e-portfolio/enhancement-one.md"  
+  >>> file = open(path, "r")  
+  >>> print(file.read())  
+  >>> Opening file: enhancement-one.md ...  
+  <span class="clickable-link" onclick="openPage('self-assessment')">Click here to open Enhancement One!</span>
     </code>
   </div>
   <div class="status-bar">Ready</div>
