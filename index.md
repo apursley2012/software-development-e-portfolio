@@ -29,12 +29,12 @@ title: Software Development ePortfolio
 apursley2012@ePortfolio-git:~$ cd software-development-e-portfolio  
 apursley2012@ePortfolio-git/software-development-e-portfolio$ python    
 Python 3.11.4 (tags/v3.11.4)  
->>> # Open and read Code Review page  
->>> path = r"software-development-e-portfolio/code-review.md"  
+>>> # Open and read my <em>Professional Self-Assessment</em> page  
+>>> path = r"software-development-e-portfolio/self-assessment.md"  
 >>> file = open(path, "r")  
 >>> print(file.read())  
->>> Opening file: code-review.md ...  
-      <span class="clickable-link" onclick="openPage('code-review')">code-review.md</span>
+>>> Opening file: self-assessment.md ...  
+      <span class="clickable-link" onclick="openPage('self-assessment')">Read my Professional Self-Assessment!</span>
     </code>
   </div>
   <div class="status-bar">Ready</div>
