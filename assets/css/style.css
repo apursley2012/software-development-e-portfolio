@@ -6,30 +6,29 @@
 }
 
 /* === Hero title styled to match your existing h1 glow/look === */
-.hero-title {
+.site-title {
   text-align: center;
   display: block;
   margin: 24px auto 12px;
   max-width: 1000px;
-
-  /* Match your heading stacks */
+  /* Match heading stacks */
   font-family: 'Press Start 2P', 'Rampart One', 'Silkscreen', 'Tektur', 'Share Tech Mono', monospace;
   font-size: 36px;
-
-  /* Match your neon green + stroke */
+  /* Match neon green + stroke */
   -webkit-text-fill-color: #33ff00;
   -webkit-text-stroke: 1px #000000;
   color: #33ff00;
-
-  /* Match your existing glow/shadow balance */
+  /* Match existing glow/shadow balance */
   text-shadow:
-    3px 3px 0 #202020,     /* hard offset shadow */
-    0 0 8px #2bd852,       /* green glow */
-    1px 1px 5px #a9a9a9,   /* soft highlight */
-    -1px -1px 5px #3a3a3a; /* subtle top-left */
+		5px 5px 2.5px #202020,
+        0 0 10px #2bd852,
+        /* Gentle glow */
+        2.5px 2.5px 5px #a9a9a9,
+        /* Soft shadow bottom-right */
+        -2.5px -2.5px 5px #3a3a3a;
+      	/* Slight top-left contrast */	
 }
 
-/* If you want the hero a bit larger on big screens */
 @media (min-width: 1000px) {
   .hero-title { font-size: 42px; }
 }
@@ -68,12 +67,13 @@
   font-size: 1.1rem;
   font-weight: 700;
   text-shadow:
-        0 0 8px #2bd852,
+		5px 5px 2.5px #202020,
+        0 0 10px #2bd852,
         /* Gentle glow */
-        1px 1px 5px #a9a9a9,
+        2.5px 2.5px 5px #a9a9a9,
         /* Soft shadow bottom-right */
-        -1px -1px 5px #3a3a3a;
-      	/* Slight top-left contrast */
+        -2.5px -2.5px 5px #3a3a3a;
+      	/* Slight top-left contrast */	
 }
 .nav-title .prompt {
   color: #0a0;
@@ -198,14 +198,13 @@ h1 {
     -webkit-text-stroke: 1px #000000;
     color: #33ff00;
     text-shadow:
-        4px 4px 1px #202020,
-        1 1 9px #2bd852,
+		5px 5px 2.5px #202020,
+        0 0 10px #2bd852,
         /* Gentle glow */
-        2px 2px 6px #a9a9a9,
+        2.5px 2.5px 5px #a9a9a9,
         /* Soft shadow bottom-right */
-        -2px -2px 6px #3a3a3a,
-        margin-bottom: 1.5rem;
-	
+        -2.5px -2.5px 5px #3a3a3a;
+      	/* Slight top-left contrast */	
 }
 
 h2 {
