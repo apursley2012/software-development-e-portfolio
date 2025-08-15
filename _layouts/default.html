@@ -72,28 +72,22 @@
 </script>
 </head>
   <body>
-    <!-- Fixed, full-width top nav (hybrid: clean bar + terminal accent) -->
-  <header class="site-header">
-    <nav class="nav-container">
-      <button class="nav-burger" aria-label="Toggle navigation">
-        <span></span><span></span><span></span>
-      </button>
-      <div class="nav-title">
-        <span class="prompt">apursley@portfolio</span>
-        <span class="path">:/site</span>
-      </div>
-      <div class="nav-links">
-        <a href="/">Home</a>
-        <a href="/self-assessment/">Self-Assessment</a>
-        <a href="/enhancement-one/">Enhancement 1</a>
-        <a href="/enhancement-two/">Enhancement 2</a>
-        <a href="/enhancement-three/">Enhancement 3</a>
-        <a href="/enhancement-three-demo/">Demo</a>
-      </div>
-    </nav>
+    <nav>
+            <ul class="main-menu">
+                <li><a href="#colours">Colours</a></li>
+                <li><a href="#fonts">Fonts</a></li>
+                <li><a href="#text-styles">Text styles</a></li>
+                <li><a href="http://codecademy.com">More soon...</a></li>
+            </ul>
+        </nav>
+        <header id="home">
+            <div class="banner">
+                <h2>Pyllo's</h2>
+                <h3>website styles</h3>
+            </div>
+        </header>
     <div class="nav-accent"></div>
   </header>
-
   <!-- Push content below fixed header via padding in CSS -->
     <main>
         {{ content }}
