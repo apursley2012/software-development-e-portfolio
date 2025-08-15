@@ -5,17 +5,49 @@
     font-style: normal;
 }
 
-/* ===== Fixed Top Navigation ===== */
-.site-header {
-  position: fixed;          /* stay on screen even when scrolling */
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 9999;            /* keep it above all content */
-  background: #f6f7f9;      /* clean background */
-  box-shadow: 0 2px 16px rgba(0,0,0,0.25);
-  border-bottom: 1px solid #e5e6ea;
+/* === Hero title styled to match your existing h1 glow/look === */
+.hero-title {
+  text-align: center;
+  display: block;
+  margin: 24px auto 12px;
+  max-width: 1000px;
+
+  /* Match your heading stacks */
+  font-family: 'Press Start 2P', 'Rampart One', 'Silkscreen', 'Tektur', 'Share Tech Mono', monospace;
+  font-size: 36px;
+
+  /* Match your neon green + stroke */
+  -webkit-text-fill-color: #33ff00;
+  -webkit-text-stroke: 1px #000000;
+  color: #33ff00;
+
+  /* Match your existing glow/shadow balance */
+  text-shadow:
+    3px 3px 0 #202020,     /* hard offset shadow */
+    0 0 8px #2bd852,       /* green glow */
+    1px 1px 5px #a9a9a9,   /* soft highlight */
+    -1px -1px 5px #3a3a3a; /* subtle top-left */
 }
+
+/* If you want the hero a bit larger on big screens */
+@media (min-width: 1000px) {
+  .hero-title { font-size: 42px; }
+}
+
+/* === Section title: reuse your h2 vibe but scoped === */
+.section-title {
+  text-align: center;
+  margin: 1.5rem auto;
+  max-width: 900px;
+  font-family: 'Share Tech Mono', 'Extrude', 'Tourney', 'Static', 'SixtyFour', 'Audiowide', 'Press Start 2P', monospace;
+  font-size: 24px;
+  line-height: 1.3;
+  color: #f0fff8;
+  text-shadow:
+    0 0 3px #80ffc0,
+    0 0 10px #66cc00,
+    0 0 20px #66cc00,
+    0 0 30px #66cc00;
 
 /* Contain the nav content and space out items */
 .nav-container {
@@ -35,7 +67,13 @@
   align-items: baseline;
   font-size: 1.1rem;
   font-weight: 700;
-  text-decoration: none;
+  text-shadow:
+        0 0 8px #2bd852,
+        /* Gentle glow */
+        1px 1px 5px #a9a9a9,
+        /* Soft shadow bottom-right */
+        -1px -1px 5px #3a3a3a;
+      	/* Slight top-left contrast */
 }
 .nav-title .prompt {
   color: #0a0;
