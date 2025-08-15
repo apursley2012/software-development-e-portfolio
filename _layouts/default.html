@@ -45,14 +45,14 @@
       if (i < originalText.length) {
         target.textContent += originalText.charAt(i);
         i++;
-        setTimeout(typeChar, 60);
+        setTimeout(typeChar, 140);
       }
     }
 
     typeChar();
   });
 
-    // Mark current nav link
+       // Mark current nav link
     document.addEventListener("DOMContentLoaded", function () {
       const path = location.pathname.replace(/\/$/, "");
       document.querySelectorAll(".nav-links a").forEach(a => {
@@ -61,7 +61,7 @@
       });
     });
 
-  // Mobile menu toggle
+    // Mobile menu toggle
     document.addEventListener("DOMContentLoaded", function () {
       const btn = document.querySelector(".nav-burger");
       const links = document.querySelector(".nav-links");
@@ -69,29 +69,42 @@
       btn.addEventListener("click", () => links.classList.toggle("open"));
     });
   </script>
-</script>
 </head>
-  <body>
-    <nav>
-            <ul class="main-menu">
-                <li><a href="#colours">Colours</a></li>
-                <li><a href="#fonts">Fonts</a></li>
-                <li><a href="#text-styles">Text styles</a></li>
-                <li><a href="http://codecademy.com">More soon...</a></li>
-            </ul>
-        </nav>
-        <header id="home">
-            <div class="banner">
-                <h2>Pyllo's</h2>
-                <h3>website styles</h3>
-            </div>
-        </header>
+
+<body>
+
+  <!-- ===== FIXED TOP NAVBAR (REPLACES OLD NAV/HEADER) ===== -->
+  <header class="site-header" role="banner">
+    <div class="nav-container">
+      <!-- Left: Title -->
+      <a class="nav-title" href="{{ '/' | relative_url }}" aria-label="Home">
+        <span class="prompt">$</span>
+        <span class="path">/portfolio</span>
+      </a>
+
+      <!-- Mobile Burger -->
+      <button class="nav-burger" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-nav">
+        <span></span><span></span><span></span>
+      </button>
+
+      <!-- Right: Links -->
+      <nav id="primary-nav" class="nav-links" role="navigation" aria-label="Primary">
+        <a href="{{ '/' | relative_url }}">Home</a>
+        <a href="{{ '/projects/' | relative_url }}">Projects</a>
+        <a href="{{ '/about/' | relative_url }}">About</a>
+        <a href="{{ '/contact/' | relative_url }}">Contact</a>
+      </nav>
+    </div>
+
+    <!-- Thin terminal-green accent bar -->
     <div class="nav-accent"></div>
   </header>
-  <!-- Push content below fixed header via padding in CSS -->
-    <main>
-        {{ content }}
-    </main>
+  <!-- ===== END FIXED NAVBAR ===== -->
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <main class="page-wrap">
+    {{ content }}
+  </main>
     <footer class="site-footer">
       <div class="footer-window">
         <div class="footer-header"> 
