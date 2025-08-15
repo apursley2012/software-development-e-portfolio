@@ -51,6 +51,24 @@
 
     typeChar();
   });
+
+    // Mark current nav link
+    document.addEventListener("DOMContentLoaded", function () {
+      const path = location.pathname.replace(/\/$/, "");
+      document.querySelectorAll(".nav-links a").forEach(a => {
+        const href = a.getAttribute("href").replace(/\/$/, "");
+        if (href === path || (href === '' && path === '')) a.setAttribute("aria-current", "page");
+      });
+    });
+
+  // Mobile menu toggle
+    document.addEventListener("DOMContentLoaded", function () {
+      const btn = document.querySelector(".nav-burger");
+      const links = document.querySelector(".nav-links");
+      if (!btn || !links) return;
+      btn.addEventListener("click", () => links.classList.toggle("open"));
+    });
+  </script>
 </script>
 </head>
   <body>
