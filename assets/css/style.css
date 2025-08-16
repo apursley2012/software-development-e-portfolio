@@ -17,15 +17,22 @@
 }
 
 /* Sticky, full-width terminal title bar */
-#navbar {
+.navbar-window {
   position: sticky;         /* stays at top while scrolling */
-  top: 0;
   z-index: 1000;
-  left: 0;
-  right: 0;
   width: 100%;
   box-sizing: border-box;
-  margin: 0;
+		width: 100%;
+	    background-color: #d8d9da;
+	    justify-content: center;
+	    padding: 2.5px;
+	    cursor: pointer;
+	    font-family: 'Share Tech Mono', monospace;
+	    border-top: 2px outset #ffffff;
+	    border-left: 2px outset #ffffff;
+	    border-right: 2px outset #404040;
+	    border-bottom: 2px outset #404040;
+
 
   /* your existing look */
   background: linear-gradient(to right, #808080, #909090, #a0a0a0, #b0b0b0, #c0c0c0);
