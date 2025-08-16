@@ -185,7 +185,7 @@ title: Software Development ePortfolio
       &gt;&gt;&gt; file = open(path, "r")  
       &gt;&gt;&gt; print(file.read())  
       Opening file: enhancement-three-demo.md ...  
-      <span class="clickable-link" onclick="openPage('enhancement-three-demo')">enhancement-three-demo.md</span>
+      <span class="clickable-link" onclick="openPage('github-pages-standalone.md')">demo stand alone</span>
     </code>
   </div>
   <div class="status-bar">Ready</div>
