@@ -22,140 +22,43 @@
       	/* Slight top-left contrast */	
 }
 
-@media (min-width: 1000px) {
-  .hero-title { font-size: 42px; }
-}
-
-/* === Section title: reuse your h2 vibe but scoped === */
-.section-title {
-  text-align: center;
-  margin: 1.5rem auto;
-  max-width: 900px;
-  font-family: 'Share Tech Mono', 'Extrude', 'Tourney', 'Static', 'SixtyFour', 'Audiowide', 'Press Start 2P', monospace;
-  font-size: 24px;
-  line-height: 1.3;
-  color: #f0fff8;
-  text-shadow:
-    0 0 3px #80ffc0,
-    0 0 10px #66cc00,
-    0 0 20px #66cc00,
-    0 0 30px #66cc00;
-}
-
-/* Contain the nav content and space out items */
-.nav-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 12px 16px;
-  gap: 12px;
-}
-
-/* Left-side site title/prompt/path */
-.nav-title {
-  display: flex;
-  gap: 8px;
-  align-items: baseline;
-  font-size: 1.1rem;
-  font-weight: 700;
-  text-shadow:
-		5px 5px 2.5px #202020,
-        0 0 10px #2bd852,
-        /* Gentle glow */
-        2.5px 2.5px 5px #a9a9a9,
-        /* Soft shadow bottom-right */
-        -2.5px -2.5px 5px #3a3a3a;
-      	/* Slight top-left contrast */	
-}
-.nav-title .prompt {
-  color: #0a0;
-  font-weight: 700;
-  text-shadow: 0 0 6px rgba(0,255,0,0.5);
-}
-.nav-title .path {
-  color: #333;
-  opacity: 0.9;
-  font-weight: 600;
-}
-
-/* Nav links (desktop) */
-.nav-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-}
-.nav-links a {
-  color: #222;
-  text-decoration: none;
-  font-weight: 700;
-  padding: 6px 10px;
-  border-radius: 6px;
-  transition: background-color 0.15s ease, color 0.15s ease, box-shadow 0.15s ease;
-}
-.nav-links a:hover {
-  background: #e8f7ea;
-  color: #0a0;
-  box-shadow: inset 0 0 0 1px #bfeac7;
-}
-.nav-links a[aria-current="page"] {
-  background: #162d16;
-  color: #ccffcc;
-  box-shadow: inset 0 0 0 1px #2a5a2a, 0 0 8px rgba(0,255,0,0.25);
-}
-
-/* Thin accent bar under the nav */
-.nav-accent {
-  height: 3px;
+#navbar {
+  position: sticky;         /* stays at top while scrolling */
+  top: 0;
+  z-index: 1000;
+  left: 0;
+  right: 0;
   width: 100%;
-  background: linear-gradient(90deg, #00ff88, #38ff38, #00ff88);
-  box-shadow: 0 0 10px rgba(0,255,136,0.8);
+  box-sizing: border-box;
+  margin: 0;
+
+  /* your existing look */
+  background: linear-gradient(to right, #808080, #909090, #a0a0a0, #b0b0b0, #c0c0c0);
+  color: #000000;
+  padding: 4px 8px;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Share Tech Mono', monospace;
+  font-weight: bold;
+  border-top: 2px inset #ffffff;
+  border-left: 2px inset #ffffff;
+  border-right: 2px inset #404040;
+  border-bottom: 2px inset #404040;
 }
 
-/* Mobile: hamburger button */
-.nav-burger {
-  display: none;
-  cursor: pointer;
-  background: transparent;
-  border: 0;
-  padding: 4px;
-}
-.nav-burger span {
-  display: block;
-  width: 24px;
-  height: 2px;
-  background: #333;
-  margin: 5px 0;
-  transition: transform 0.2s ease, opacity 0.2s ease;
+/* Title text in the header */
+#navbar .navbar-title {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
 }
 
-/* Mobile menu (hidden by default) */
-@media (max-width: 900px) {
-  .nav-burger {
-    display: block;
-  }
-  .nav-links {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 60px;
-    display: none;
-    flex-direction: column;
-    gap: 0;
-    background: #f6f7f9;
-    border-top: 1px solid #e5e6ea;
-    padding: 8px 0;
-    box-shadow: 0 10px 16px rgba(0,0,0,0.2);
-  }
-  .nav-links.open {
-    display: flex;
-  }
-  .nav-links a {
-    padding: 12px 16px;
-    border-radius: 0;
-    border-top: 1px solid #eceff2;
-  }
+/* Page content */
+.content {
+  padding: 16px;
 }
 
 /* Push the page content down so it doesn't sit under the fixed nav */
