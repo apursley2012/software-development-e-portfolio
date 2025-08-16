@@ -17,10 +17,27 @@
   <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
-
+  <header id="navbar" class="terminal-header" role="banner">
+    <div class="navbar-title">Alysha Pursley’s ePortfolio</div>
+  
+    <!-- Min / Max / Close style links -->
+    <nav class="terminal-buttons" role="navigation" aria-label="Primary">
+      <!-- Group 1 -->
+      <a class="terminal-button minimize" href="{{ '/' | relative_url }}" title="Home" aria-label="Home">_</a>
+      <a class="terminal-button maximize" href="{{ '/self-assessment/' | relative_url }}" title="Self-Assessment" aria-label="Self-Assessment">▢</a>
+      <a class="terminal-button close" href="{{ '/code-review/' | relative_url }}" title="Code Review" aria-label="Code Review">✕</a>
+  
+      <span class="terminal-gap" aria-hidden="true"></span>
+  
+      <!-- Group 2 -->
+      <a class="terminal-button minimize" href="{{ '/enhancements/software-design/' | relative_url }}" title="Enhancement 1">_</a>
+      <a class="terminal-button maximize" href="{{ '/enhancements/algorithms-data-structures/' | relative_url }}" title="Enhancement 2">▢</a>
+      <a class="terminal-button close" href="{{ '/enhancements/databases/' | relative_url }}" title="Enhancement 3">✕</a>
+    </nav>
+  </header>
   <!-- =========================
-       STICKY TERMINAL HEADER
-       ========================= -->
+     STICKY TERMINAL HEADER
+   ========================= -->
   <header id="navbar" class="terminal-header" role="banner">
     <div class="navbar-title">Alysha Pursley’s ePortfolio</div>
 
