@@ -16,7 +16,82 @@
     -2.5px -2.5px 5px #3a3a3a;
 }
 
-/* Optional legacy window you had for nav — keep but DO NOT wrap header in this (it caps width) */
+/* Sticky, full-width terminal title bar */
+#navbar {
+  position: sticky;         /* stays at top while scrolling */
+  top: 0;
+  z-index: 1000;
+  left: 0;
+  right: 0;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+
+  /* your existing look */
+  background: linear-gradient(to right, #808080, #909090, #a0a0a0, #b0b0b0, #c0c0c0);
+  color: #000000;
+  padding: 4px 8px;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Share Tech Mono', monospace;
+  font-weight: bold;
+  border-top: 2px inset #ffffff;
+  border-left: 2px inset #ffffff;
+  border-right: 2px inset #404040;
+  border-bottom: 2px inset #404040;
+}
+
+/* Title text in the header */
+#navbar .navbar-title {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+}
+
+/* Group of window controls */
+.terminal-buttons {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;      /* small gap between groups */
+}
+
+/* Optional spacer to separate groups like Win2000 close button spacing */
+.terminal-gap {
+  display: inline-block;
+  width: 8px;
+}
+
+/* Make the buttons be clickable links with your 3D chrome */
+.terminal-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
+
+  border-top: 2px outset #fefefe;
+  border-left: 2px outset #fefefefe;
+  border-right: 2px outset #505050;
+  border-bottom: 2px outset #505050;
+  background-color: #d8d9da;
+  font-size: 0.75rem;
+  font-family: 'Share Tech Mono', monospace;
+  font-weight: bold;
+  line-height: 1;
+}
+.terminal-button:hover { filter: brightness(0.96); }
+.terminal-button:active {
+  border: 2px inset #d8d9da;
+  transform: translate(1px, 1px);
+}
+
+/* Optional legacy window you had for nav — keep but DO NOT wrap header in this (it caps width) 
 .navbar-window {
   background-color: #d8d9da;
   justify-content: center;
@@ -33,7 +108,7 @@
 /* =========================
    STICKY FULL-WIDTH NAVBAR
    (uses your terminal-header style)
-   ========================= */
+   ========================= 
 #navbar {
   position: sticky;
   top: 0;
@@ -44,7 +119,7 @@
   margin: 0;
 }
 
-/* Your terminal header chrome */
+/* Your terminal header chrome 
 .terminal-header {
   background: linear-gradient(to right, #808080, #909090, #a0a0a0, #b0b0b0, #c0c0c0);
   color: #000000;
@@ -66,7 +141,7 @@
   align-items: center;
   gap: 8px;
   white-space: nowrap;
-}
+} */
 
 /* Button group (min/max/close) */
 .terminal-buttons {
