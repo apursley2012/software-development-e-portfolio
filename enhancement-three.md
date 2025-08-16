@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Enhancement Three Demo
+title: Enhancement Three 
 ---
 
 <h1 id="typed-text">Corner Grocer App Demo</h1>
