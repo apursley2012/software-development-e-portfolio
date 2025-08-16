@@ -4,39 +4,52 @@
   display: block;
   margin: 24px auto 12px;
   max-width: 1000px;
-  /* Match heading stacks */
   font-family: 'Press Start 2P', 'Rampart One', 'Silkscreen', 'Tektur', 'Share Tech Mono', monospace;
   font-size: 36px;
-  /* Match neon green + stroke */
   -webkit-text-fill-color: #33ff00;
   -webkit-text-stroke: 1px #000000;
   color: #33ff00;
-  /* Match existing glow/shadow balance */
   text-shadow:
-		5px 5px 2.5px #202020,
-        0 0 10px #2bd852,
-        /* Gentle glow */
-        2.5px 2.5px 5px #a9a9a9,
-        /* Soft shadow bottom-right */
-        -2.5px -2.5px 5px #3a3a3a;
-      	/* Slight top-left contrast */	
+    5px 5px 2.5px #202020,
+    0 0 10px #2bd852,
+    2.5px 2.5px 5px #a9a9a9,
+    -2.5px -2.5px 5px #3a3a3a;
 }
 
+/* Optional legacy window you had for nav — keep but DO NOT wrap header in this (it caps width) */
+.navbar-window {
+  background-color: #d8d9da;
+  justify-content: center;
+  padding: 2.5px;
+  max-width: 900px;
+  cursor: pointer;
+  font-family: 'Share Tech Mono', monospace;
+  border-top: 2px outset #ffffff;
+  border-left: 2px outset #ffffff;
+  border-right: 2px outset #404040;
+  border-bottom: 2px outset #404040;
+}
+
+/* =========================
+   STICKY FULL-WIDTH NAVBAR
+   (uses your terminal-header style)
+   ========================= */
 #navbar {
-  position: sticky;         /* stays at top while scrolling */
+  position: sticky;
   top: 0;
   z-index: 1000;
-  left: 0;
-  right: 0;
+  left: 0; right: 0;
   width: 100%;
   box-sizing: border-box;
   margin: 0;
+}
 
-  /* your existing look */
+/* Your terminal header chrome */
+.terminal-header {
   background: linear-gradient(to right, #808080, #909090, #a0a0a0, #b0b0b0, #c0c0c0);
   color: #000000;
-  padding: 4px 8px;
-  font-size: 16px;
+  padding: 4px 6px;
+  font-size: 18px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -48,7 +61,6 @@
   border-bottom: 2px inset #404040;
 }
 
-/* Title text in the header */
 #navbar .navbar-title {
   display: inline-flex;
   align-items: center;
@@ -56,371 +68,354 @@
   white-space: nowrap;
 }
 
-/* Page content */
-.content {
-  padding: 16px;
-}
-
-/* Push the page content down so it doesn't sit under the fixed nav */
-.page-wrap {
-  padding-top: 96px; /* adjust if header height changes */
-}
-
-body {
-	width: 100%;
-    flex: 1;
-    background-color: #19647E;
-    color: #ffffff;
-    font-family: 'Share Tech Mono', monospace;
-    margin: 0;
-	justify-content: center;
-	align-items: center;
-}
-
-main {
-    width: 100%;
-    flex: 1;
-    justify-content: center;
-	align-items: center;
-}
-
-h1 {
-	text-align: center;
-	justify-content: center;
-	align-items: center;
-    flex: 1;
-    font-family: 'Press Start 2P', 'Rampart One', 'Silkscreen', 'Tektur';
-    font-size: 36px;
-    -webkit-text-fill-color: #33ff00;
-    -webkit-text-stroke: 1px #000000;
-    color: #33ff00;
-    text-shadow:
-		5px 5px 2.5px #202020,
-        0 0 10px #2bd852,
-        /* Gentle glow */
-        2.5px 2.5px 5px #a9a9a9,
-        /* Soft shadow bottom-right */
-        -2.5px -2.5px 5px #3a3a3a;
-      	/* Slight top-left contrast */	
-}
-
-h2 {
-	text-align: center;
-	justify-content: center;
-	align-items: center;
-    flex: 1;
-    font-family: 'Share Tech Mono', 'Extrude', 'Tourney', 'Static', 'SixtyFour', 'Audiowide', 'Press Start 2P', monospace;
-    color: #f0fff8;
-    text-shadow:
-        0 0 3px #80ffc0,
-        0 0 10px #66cc00,
-        0 0 20px #66cc00,
-        0 0 30px #66cc00;
-    margin-bottom: 1.5rem;
-    font-size: 24px;
-    line-height: 1.3;
-	max-width: 900px;
-}
-
-h3 {
-	text-align: center;
-	justify-content: center;
-	align-items: center;
-    flex: 1;
-    font-size: 20px;
-    line-height: 1.4;
-	max-width: 75%;
-}
-
-p {
-	text-align: center;
-	justify-content: center;
-	align-items: center;
-    flex: 1;    
-	font-size: 18px;
-    line-height: 1.6;
-    margin-bottom: 1rem;
-	max-width: 900px;
-}
-
-.intro-text {
-	text-align: center;
-	justify-content: center;
-	align-items: center;
-    flex: 1;
-    font-family: 'Share Tech Mono', monospace;
-    color: #ffffff;
-	margin: 32px auto;
-	max-width: 900px;
-    font-size: 18px;
-    margin-bottom: 3rem;
-}
-
-/* Terminal Window */
-.terminal-window {
-    background-color: #d8d9da;
-    justify-content: center;
-    padding: 2.5px;
-    margin: 32px auto;
-    max-width: 900px;
-    cursor: pointer;
-    font-family: 'Share Tech Mono', monospace;
-    border-top: 2px outset #ffffff;
-    border-left: 2px outset #ffffff;
-    border-right: 2px outset #404040;
-    border-bottom: 2px outset #404040;
-}
-
-.terminal-window:hover {
-    border: 5px solid #303030;
-}
-
-.terminal-header {
-    background: linear-gradient(to right, #808080, #909090, #a0a0a0, #b0b0b0, #c0c0c0);
-    color: #000000;
-    padding: 4px 6px;
-    font-size: 18px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-family: 'Share Tech Mono', monospace;
-    font-weight: bold;
-    border-top: 2px inset #ffffff;
-    border-left: 2px inset #ffffff;
-    border-right: 2px inset #404040;
-    border-bottom: 2px inset #404040;
-}
-
+/* Button group (min/max/close) */
 .terminal-buttons {
-    display: flex;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
 }
 
+.terminal-gap { display: inline-block; width: 8px; }
+
+/* Buttons as links or spans (both supported) */
 .terminal-button {
-    width: 20px;
-    height: 20px;
-    border-top: 2px outset #fefefe;
-    border-left: 2px outset #fefefefe;
-    border-right: 2px outset #505050;
-    border-bottom: 2px outset #505050;
-    background-color: #d8d9da;
-    font-size: 0.6rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    font-family: 'Share Tech Mono', monospace;
-    font-weight: bold;
+  width: 20px;
+  height: 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
+  font-size: 0.75rem;
+  font-family: 'Share Tech Mono', monospace;
+  font-weight: bold;
+
+  /* 3D chrome */
+  border-top: 2px outset #fefefe;
+  border-left: 2px outset #fefefefe;
+  border-right: 2px outset #505050;
+  border-bottom: 2px outset #505050;
+  background-color: #d8d9da;
 }
 
+.terminal-button:hover { filter: brightness(0.96); }
 .terminal-button:active {
-    border: 2px inset #d8d9da;
+  border: 2px inset #d8d9da;
+  transform: translate(1px, 1px);
 }
 
-.terminal-button.maximize {
-    margin-right: 4px;
-}
-
+.terminal-button.maximize { margin-right: 4px; }
 .terminal-button i {
-    font-size: 0.75rem;
-    color: black;
-    line-height: 1;
-    align-items: center;
-    justify-content: center;
+  font-size: 0.75rem;
+  color: black;
+  line-height: 1;
 }
 
+/* Remove any old navbar link padding that would blow up the buttons */
+#navbar a { padding: 0; color: inherit; }
+
+/* =========================
+   TERMINAL WINDOW (content)
+   ========================= */
+.terminal-window {
+  background-color: #d8d9da;
+  justify-content: center;
+  padding: 2.5px;
+  margin: 32px auto;
+  max-width: 900px;
+  cursor: default;
+  font-family: 'Share Tech Mono', monospace;
+  border-top: 2px outset #ffffff;
+  border-left: 2px outset #ffffff;
+  border-right: 2px outset #404040;
+  border-bottom: 2px outset #404040;
+}
+
+.terminal-window:hover { border: 5px solid #303030; }
+
+/* Classic terminal body (black/green) */
 .terminal-content {
-    background-color: #000000;
-    color: #00ff00;
-    padding: 2px;
-    font-family: 'Share Tech Mono', monospace;
-    font-size: 16px;
-	font-weight: normal;
-    line-height: 1.5;
-    min-height: 150px;
+  background-color: #000000;
+  color: #00ff00;
+  padding: 2px;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.5;
+  min-height: 150px;
 }
 
 .terminal-content code {
-    display: block;
-    color: #33ff00;
-    background: #000000;
-    white-space: pre-wrap;
-    font-family: 'Share Tech Mono', monospace;
-    font-size: 16px;
-	font-weight: normal;
-    line-height: 1.5;
-    text-shadow:
-        0 0 8px #2bd852,
-        /* Gentle glow */
-        1px 1px 5px #a9a9a9,
-        /* Soft shadow bottom-right */
-        -1px -1px 5px #3a3a3a;
-      	/* Slight top-left contrast */
+  display: block;
+  color: #33ff00;
+  background: #000000;
+  white-space: pre-wrap;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.5;
+  text-shadow:
+    0 0 8px #2bd852,
+    1px 1px 5px #a9a9a9,
+    -1px -1px 5px #3a3a3a;
+}
+
+/* NEW: Light program body for long text (self-assessment) */
+.program-body {
+  background: #ffffff;
+  color: #111;
+  padding: 16px;
+  font-family: 'Share Tech Mono', monospace;
+  line-height: 1.6;
+}
+
+/* Navbar-like status bar look */
+.status-bar {
+  background: linear-gradient(to right, #c0c0c0, #e0e0e0);
+  padding: 0.25rem 0.5rem;
+  color: #000000;
+  font-size: 16px;
+  text-align: left;
+  border-top: 1px solid #808080;
+  font-family: 'Share Tech Mono', monospace;
+}
+
+/* =========================
+   PAGE LAYOUT & TYPO
+   ========================= */
+.page-wrap { padding-top: 72px; } /* ensures content doesn't hide under sticky header */
+
+body {
+  width: 100%;
+  flex: 1;
+  background-color: #19647E;
+  color: #ffffff;
+  font-family: 'Share Tech Mono', monospace;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  width: 100%;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  font-family: 'Press Start 2P', 'Rampart One', 'Silkscreen', 'Tektur';
+  font-size: 36px;
+  -webkit-text-fill-color: #33ff00;
+  -webkit-text-stroke: 1px #000000;
+  color: #33ff00;
+  text-shadow:
+    5px 5px 2.5px #202020,
+    0 0 10px #2bd852,
+    2.5px 2.5px 5px #a9a9a9,
+    -2.5px -2.5px 5px #3a3a3a;
+}
+
+h2 {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  font-family: 'Share Tech Mono', 'Extrude', 'Tourney', 'Static', 'SixtyFour', 'Audiowide', 'Press Start 2P', monospace;
+  color: #f0fff8;
+  text-shadow:
+    0 0 3px #80ffc0,
+    0 0 10px #66cc00,
+    0 0 20px #66cc00,
+    0 0 30px #66cc00;
+  margin-bottom: 1.5rem;
+  font-size: 24px;
+  line-height: 1.3;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h3 {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  font-size: 20px;
+  line-height: 1.4;
+  max-width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+p {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.intro-text {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  font-family: 'Share Tech Mono', monospace;
+  color: #ffffff;
+  margin: 32px auto;
+  max-width: 900px;
+  font-size: 18px;
+  margin-bottom: 3rem;
 }
 
 .clickable-link {
-    color: #00ffff;
-    text-decoration: underline;
-    cursor: pointer;
-    transition: color 0.2s ease;
+  color: #00ffff;
+  text-decoration: underline;
+  cursor: pointer;
+  transition: color 0.2s ease;
 }
+.clickable-link:hover { color: #ffff00; }
 
-.clickable-link:hover {
-    color: #ffff00;
-}
-
-.status-bar {
-    background: linear-gradient(to right, #c0c0c0, #e0e0e0);
-    padding: 0.25rem 0.5rem;
-    color: #000000;
-    font-size: 16px;
-    text-align: left;
-    border-top: 1px solid #808080;
-    font-family: 'Share Tech Mono', monospace;
-}
-
+/* =========================
+   MARKDOWN CONTENT (dark)
+   ========================= */
 .markdown-content {
-    background-color: #0a0a0a;
-    padding: 2rem;
-    margin: 2rem auto;
-    border-radius: 5px;
-    box-shadow: 0 0 15px rgba(0, 255, 136, 0.5);
-    max-width: 900px;
+  background-color: #0a0a0a;
+  padding: 2rem;
+  margin: 2rem auto;
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0, 255, 136, 0.5);
+  max-width: 900px;
 }
 
 .markdown-content h2,
 .markdown-content h3 {
-    text-align: left;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-    padding-bottom: 0.5rem;
-    border-bottom: 1px dashed #ccff00;
-    text-shadow: 0 0 10px #ccff00;
-    font-family: 'Press Start 2P', monospace;
-    font-size: 1rem;
-    line-height: 1.4;
+  text-align: left;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px dashed #ccff00;
+  text-shadow: 0 0 10px #ccff00;
+  font-family: 'Press Start 2P', monospace;
+  font-size: 1rem;
+  line-height: 1.4;
 }
 
 .markdown-content p,
 .markdown-content ul,
 .markdown-content ol,
 .markdown-content pre {
-    color: #ffffff;
-    font-family: 'Share Tech Mono', monospace;
-    font-size: 1rem;
-    line-height: 1.6;
+  color: #ffffff;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 1rem;
+  line-height: 1.6;
 }
 
-.markdown-content a {
-    color: #00ffff;
-    text-decoration: none;
-}
-
-.markdown-content a:hover {
-    text-decoration: underline;
-}
+.markdown-content a { color: #00ffff; text-decoration: none; }
+.markdown-content a:hover { text-decoration: underline; }
 
 .markdown-content ul,
 .markdown-content ol {
-    list-style-type: none;
-    padding-left: 1.5rem;
+  list-style-type: none;
+  padding-left: 1.5rem;
 }
 
 .markdown-content ul li::before {
-    content: "❯";
-    color: #ccff00;
-    display: inline-block;
-    width: 1em;
-    margin-left: -1em;
-    text-shadow: 0 0 5px #ccff00;
+  content: "❯";
+  color: #ccff00;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+  text-shadow: 0 0 5px #ccff00;
 }
 
 .markdown-content pre {
-    background-color: #1a1a1a;
-    padding: 1rem;
-    border-radius: 3px;
-    overflow-x: auto;
+  background-color: #1a1a1a;
+  padding: 1rem;
+  border-radius: 3px;
+  overflow-x: auto;
 }
 
+/* =========================
+   FOOTER (FIXED: no nested CSS)
+   ========================= */
 .site-footer {
-    cursor: pointer;
-    font-family: 'Share Tech Mono', monospace;
-    width: 100%;
-    margin-top: auto;
+  cursor: pointer;
+  font-family: 'Share Tech Mono', monospace;
+  width: 100%;
+  margin-top: auto;
+}
 
-	/* Terminal Window */
-	.footer-window {
-		box-sizing: border-box;
-		width: 100%;
-	    background-color: #d8d9da;
-	    justify-content: center;
-	    padding: 2.5px;
-	    cursor: pointer;
-	    font-family: 'Share Tech Mono', monospace;
-	    border-top: 2px outset #ffffff;
-	    border-left: 2px outset #ffffff;
-	    border-right: 2px outset #404040;
-	    border-bottom: 2px outset #404040;
-		
-	}
-	
-	.footer-window:hover {
-	    border: 5px solid #303030;
-	}
-	
-	.footer-header {
-	    background: linear-gradient(to right, #808080, #909090, #a0a0a0, #b0b0b0, #c0c0c0);
-	    color: #000000;
-	    padding: 4px 6px;
-	    font-size: 18px;
-	    display: border-box;
-	    justify-content: space-between;
-	    font-family: 'Share Tech Mono', monospace;
-	    font-weight: bold;
-	    border-top: 2px inset #ffffff;
-	    border-left: 2px inset #ffffff;
-	    border-right: 2px inset #404040;
-	    border-bottom: 2px inset #404040;
-	}
-	
+.footer-window {
+  box-sizing: border-box;
+  width: 100%;
+  background-color: #d8d9da;
+  justify-content: center;
+  padding: 2.5px;
+  cursor: pointer;
+  border-top: 2px outset #ffffff;
+  border-left: 2px outset #ffffff;
+  border-right: 2px outset #404040;
+  border-bottom: 2px outset #404040;
+}
 
-	.footer-content {
-	    background-color: #000000;
-	    color: #00ff00;
-	    padding: 2px;
-	    font-family: 'Share Tech Mono', monospace;
-	    font-size: 16px;
-		font-weight: normal;
-	    line-height: 1.5;
-	    text-align: left;
-	}
-	
-	.footer-content code {
-	    display: block;
-	    color: #33ff00;
-	    background: #000000;
-	    white-space: pre-wrap;
-	    font-family: 'Share Tech Mono', monospace;
-	    font-size: 16px;
-		font-weight: normal;
-		text-align: left;
-	    line-height: 1.5;
-		text-shadow:
-        0 0 8px #2bd852,
-        /* Gentle glow */
-        1px 1px 5px #a9a9a9,
-        /* Soft shadow bottom-right */
-        -1px -1px 5px #3a3a3a;
-      	/* Slight top-left contrast */
-	}
-	
-	
-	.footer-status-bar {
-	    background: linear-gradient(to right, #c0c0c0, #e0e0e0);
-	    padding: 0.25rem 0.5rem;
-	    color: #000000;
-	    font-size: 16px;
-	    text-align: left;
-	    border-top: 1px solid #808080;
-	    font-family: 'Share Tech Mono', monospace;
-	}
+.footer-window:hover { border: 5px solid #303030; }
+
+.footer-header {
+  background: linear-gradient(to right, #808080, #909090, #a0a0a0, #b0b0b0, #c0c0c0);
+  color: #000000;
+  padding: 4px 6px;
+  font-size: 18px;
+  display: block;
+  font-weight: bold;
+  border-top: 2px inset #ffffff;
+  border-left: 2px inset #ffffff;
+  border-right: 2px inset #404040;
+  border-bottom: 2px inset #404040;
+}
+
+.footer-content {
+  background-color: #000000;
+  color: #00ff00;
+  padding: 2px 6px;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.footer-content code {
+  display: block;
+  color: #33ff00;
+  background: #000000;
+  white-space: pre-wrap;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 16px;
+  font-weight: normal;
+  text-align: left;
+  line-height: 1.5;
+  text-shadow:
+    0 0 8px #2bd852,
+    1px 1px 5px #a9a9a9,
+    -1px -1px 5px #3a3a3a;
+}
+
+.footer-status-bar {
+  background: linear-gradient(to right, #c0c0c0, #e0e0e0);
+  padding: 0.25rem 0.5rem;
+  color: #000000;
+  font-size: 16px;
+  text-align: left;
+  border-top: 1px solid #808080;
+  font-family: 'Share Tech Mono', monospace;
 }
