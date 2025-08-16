@@ -34,7 +34,7 @@
 	    border-bottom: 2px outset #404040;
 
 
-  /* your existing look */
+  .navbar-header {
   background: linear-gradient(to right, #808080, #909090, #a0a0a0, #b0b0b0, #c0c0c0);
   color: #000000;
   padding: 4px 8px;
@@ -76,12 +76,13 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 22px;
-  height: 22px;
+  padding: 2px 2px;     /* adjust side padding to taste */
+  height: auto;
+  min-height: 40px;      /* keep your old minimum height */
+  min-width: 40px;  
   text-decoration: none;
-  color: #000;
+  color: #000000;
   cursor: pointer;
-
   border-top: 2px outset #fefefe;
   border-left: 2px outset #fefefefe;
   border-right: 2px outset #505050;
