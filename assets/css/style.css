@@ -1,11 +1,4 @@
-@font-face {
-    font-family: 'Extrude';
-    src: url('.../assets/fonts/Extrude.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-/* === Hero title styled to match your existing h1 glow/look === */
+/* === Hero title styled to match existing h1 glow/look === */
 .site-title {
   text-align: center;
   display: block;
@@ -47,6 +40,7 @@
     0 0 10px #66cc00,
     0 0 20px #66cc00,
     0 0 30px #66cc00;
+}
 
 /* Contain the nav content and space out items */
 .nav-container {
@@ -406,7 +400,7 @@ p {
 .markdown-content p,
 .markdown-content ul,
 .markdown-content ol,
-.markdown-content pre, {
+.markdown-content pre {
     color: #ffffff;
     font-family: 'Share Tech Mono', monospace;
     font-size: 1rem;
@@ -494,7 +488,7 @@ p {
 	    font-size: 16px;
 		font-weight: normal;
 	    line-height: 1.5;
-	    text-align: left
+	    text-align: left;
 	}
 	
 	.footer-content code {
@@ -504,7 +498,7 @@ p {
 	    white-space: pre-wrap;
 	    font-family: 'Share Tech Mono', monospace;
 	    font-size: 16px;
-		font-weight: normal
+		font-weight: normal;
 		text-align: left;
 	    line-height: 1.5;
 		text-shadow:
