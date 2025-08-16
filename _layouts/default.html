@@ -14,7 +14,6 @@
 
   <!-- Site CSS -->
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
-  <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
   <header id="navbar" class="terminal-header" role="banner">
@@ -23,39 +22,34 @@
     <!-- Min / Max / Close style links -->
     <nav class="terminal-buttons" role="navigation" aria-label="Primary">
       <!-- Group 1 -->
-      <a class="terminal-button minimize" href="{{ '/' | relative_url }}" title="Home" aria-label="Home">_</a>
-      <a class="terminal-button maximize" href="{{ '/self-assessment/' | relative_url }}" title="Self-Assessment" aria-label="Self-Assessment">▢</a>
-      <a class="terminal-button close" href="{{ '/code-review/' | relative_url }}" title="Code Review" aria-label="Code Review">✕</a>
-  
+      <a class="terminal-button" href="{{ '/index' | relative_url }}" title="Home" aria-label="Home">Home</a>
+      <a class="terminal-button" href="{{ '/enhancement-one/' | relative_url }}" title="Enhancement One" aria-label="Enhancement One">Enhancement One</a>
+      <a class="terminal-button" href="{{ '/enhancement-two/' | relative_url }}" title="Enhancement Two" aria-label="Enhancement Two">Enhancement Two</a>
+      <a class="terminal-button" href="{{ '/enhancement-three' | relative_url }}" title="Enhancement Three" aria-label="Enhancement Three">Enhancement Three</a>
       <span class="terminal-gap" aria-hidden="true"></span>
-  
-      <!-- Group 2 -->
-      <a class="terminal-button minimize" href="{{ '/enhancements/software-design/' | relative_url }}" title="Enhancement 1">_</a>
-      <a class="terminal-button maximize" href="{{ '/enhancements/algorithms-data-structures/' | relative_url }}" title="Enhancement 2">▢</a>
-      <a class="terminal-button close" href="{{ '/enhancements/databases/' | relative_url }}" title="Enhancement 3">✕</a>
     </nav>
   </header>
   <!-- =========================
      STICKY TERMINAL HEADER
-   ========================= -->
+   ========================= 
   <header id="navbar" class="terminal-header" role="banner">
     <div class="navbar-title">Alysha Pursley’s ePortfolio</div>
 
-    <!-- Min/Max/Close style links as NAV -->
+    <!-- Min/Max/Close style links as NAV 
     <nav class="terminal-buttons" role="navigation" aria-label="Primary">
-      <!-- Group 1 -->
+      <!-- Group 1 
       <a class="terminal-button minimize" href="{{ '/' | relative_url }}" title="Home" aria-label="Home">_</a>
       <a class="terminal-button maximize" href="{{ '/self-assessment/' | relative_url }}" title="Self-Assessment" aria-label="Self-Assessment">▢</a>
       <a class="terminal-button close" href="{{ '/code-review/' | relative_url }}" title="Code Review" aria-label="Code Review">✕</a>
 
       <span class="terminal-gap" aria-hidden="true"></span>
 
-      <!-- Group 2 (Enhancements) -->
+      <!-- Group 2 (Enhancements) 
       <a class="terminal-button minimize" href="{{ '/enhancements/software-design/' | relative_url }}" title="Enhancement 1 — Software Design">_</a>
       <a class="terminal-button maximize" href="{{ '/enhancements/algorithms-data-structures/' | relative_url }}" title="Enhancement 2 — Algorithms & Data Structures">▢</a>
       <a class="terminal-button close" href="{{ '/enhancements/databases/' | relative_url }}" title="Enhancement 3 — Databases">✕</a>
     </nav>
-  </header>
+  </header> -->
 
   <!-- =========================
        MAIN CONTENT
