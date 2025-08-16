@@ -2,155 +2,98 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{{ page.title | default: site.title }}</title>
-    
-    <!-- Connect/Import Google fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-          
-    <!-- Google Fonts Stylesheets -->
-    <link href="https://fonts.googleapis.com/css2?family=Anta&family=Atma:wght@300;400;500;600;700&family=Atomic+Age&family=Audiowide&family=BhuTuka+Expanded+One&family=Bungee+Shade&family=Coral+Pixels&family=DotGothic16&family=Doto:wght@100..900&family=Handjet:wght@100..900&family=Honk&family=Jersey+15&family=Londrina+Shadow&family=Major+Mono+Display&family=Pixelify+Sans:wght@400..700&family=Press+Start+2P&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&family=Raleway+Dots&family=Rampart+One&family=Rubik+Glitch&family=Sankofa+Display&family=Share+Tech+Mono&family=Silkscreen:wght@400;700&family=Sirin+Stencil&family=Sixtyfour&family=Sixtyfour+Convergence&family=Stalinist+One&family=Syne+Mono&family=Tektur:wght@400..900&family=Tourney:ital,wght@0,100..900;1,100..900&family=VT323&family=Vast+Shadow&family=Workbench&display=swap" rel="stylesheet">
-      <!-- Font Awesome Kit -->
-      
-     <script src="https://kit.fontawesome.com/3564f42dfc.js" crossorigin="anonymous"></script>
-     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
-  <!-- CSS -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>{{ page.title | default: "Alysha Pursley's ePortfolio" }}</title>
+
+  <!-- Google Fonts (keep your family stack) -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anta&family=Atma:wght@300;400;500;600;700&family=Atomic+Age&family=Audiowide&family=BhuTuka+Expanded+One&family=Bungee+Shade&family=Coral+Pixels&family=DotGothic16&family=Doto:wght@100..900&family=Handjet:wght@100..900&family=Honk&family=Jersey+15&family=Londrina+Shadow&family=Major+Mono+Display&family=Pixelify+Sans:wght@400..700&family=Press+Start+2P&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&family=Raleway+Dots&family=Rampart+One&family=Rubik+Glitch&family=Sankofa+Display&family=Share+Tech+Mono&family=Silkscreen:wght@400;700&family=Sirin+Stencil&family=Sixtyfour&family=Sixtyfour+Convergence&family=Stalinist+One&family=Syne+Mono&family=Tektur:wght@400..900&family=Tourney:ital,wght@0,100..900;1,100..900&family=VT323&family=Vast+Shadow&family=Workbench&display=swap" rel="stylesheet">
+  <!-- Font Awesome (optional) -->
+  <script src="https://kit.fontawesome.com/3564f42dfc.js" crossorigin="anonymous"></script>
+
+  <!-- Site CSS -->
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
   <link rel="stylesheet" href="/assets/css/style.css">
-
-    <!-- Typing text script -->
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const target = document.getElementById("typed-text");
-    if (!target) return;
-
-    const originalText = target.textContent.trim();
-    target.textContent = "";
-
-    let i = 0;
-    function typeChar() {
-      if (i < originalText.length) {
-        target.textContent += originalText.charAt(i);
-        i++;
-        setTimeout(typeChar, 140);
-      }
-    }
-
-    typeChar();
-  });
-
-       // Mark current nav link
-    document.addEventListener("DOMContentLoaded", function () {
-      const path = location.pathname.replace(/\/$/, "");
-      document.querySelectorAll(".nav-links a").forEach(a => {
-        const href = a.getAttribute("href").replace(/\/$/, "");
-        if (href === path || (href === '' && path === '')) a.setAttribute("aria-current", "page");
-      });
-    });
-
-    // Mobile menu toggle
-    document.addEventListener("DOMContentLoaded", function () {
-      const btn = document.querySelector(".nav-burger");
-      const links = document.querySelector(".nav-links");
-      if (!btn || !links) return;
-      btn.addEventListener("click", () => links.classList.toggle("open"));
-    });
-  </script>
-  <title>Alysha Pursley's ePortfolio</title>
 </head>
 <body>
-<div class="navbar-window">
-  <div class="navbar-header">
-    <span>Alysha Pursley's ePortfolio</span>
-    <div class="terminal-buttons">
-      <div class="terminal-button">
-        <li><a href="#home">Enhancement One</a></li>
-      </div>
-      <div class="terminal-button">
-        <li><a href="#home">Enhancement Two</a></li>
-      </div>
-      <div class="terminal-button">
-        <li><a href="#home">Home</a></li>
-      </div>
-    </div>
-  </div>
-  <div class="navbar-content">
-    <code>
-  apursley2012@ePortfolio-git:~$ cd software-development-e-portfolio  
-  apursley2012@ePortfolio-git/software-development-e-portfolio$ python    
-  Python 3.11.4 (tags/v3.11.4)  
-  >>> Welcome To My Software Development ePortfolio
-  <span class="clickable-link" onclick="openPage('self-assessment')">Read my Professional Self-Assessment!</span>
-    </code>
-  </div>
-  <div class="status-bar">Ready</div>
-</div>
-<ul>
-  <li><a href="#home">Home</a></li>
-  <li><a href="#news">News</a></li>
-  <li class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn">Dropdown</a>
-    <div class="dropdown-content">
-      <a href="#">Link 1</a>
-      <a href="#">Link 2</a>
-      <a href="#">Link 3</a>
-    </div>
-  </li>
-</ul>
-  <!-- ===== FIXED TOP NAVBAR ===== -->
-  <header class="site-header" role="banner">
-    <div class="nav-container">
-    <h1>Alysha Pursley's ePortfolio</h1> 
-     
-      <!-- Mobile Burger 
-      <button class="nav-burger" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-nav">
-        <span></span><span></span><span></span>
-      </button>
 
-      <!-- Right: Links 
-      <nav id="primary-nav" class="nav-links" role="navigation" aria-label="Primary">
-        <a href="{{ '/' | relative_url }}">Home</a>
-        <a href="{{ '/enhancement-one/' | relative_url }}">Enhancement One: </a>
-        <a href="{{ '/enhancement-two/' | relative_url }}">Enhancement Two:</a>
-        <a href="{{ '/enhancement-three/' | relative_url }}">Enhancement Three:</a>
-      </nav>
-    </div>
+  <!-- =========================
+       STICKY TERMINAL HEADER
+       ========================= -->
+  <header id="navbar" class="terminal-header" role="banner">
+    <div class="navbar-title">Alysha Pursley’s ePortfolio</div>
 
-    <!-- Thin terminal-green accent bar -->
-    <div class="nav-accent"></div>
+    <!-- Min/Max/Close style links as NAV -->
+    <nav class="terminal-buttons" role="navigation" aria-label="Primary">
+      <!-- Group 1 -->
+      <a class="terminal-button minimize" href="{{ '/' | relative_url }}" title="Home" aria-label="Home">_</a>
+      <a class="terminal-button maximize" href="{{ '/self-assessment/' | relative_url }}" title="Self-Assessment" aria-label="Self-Assessment">▢</a>
+      <a class="terminal-button close" href="{{ '/code-review/' | relative_url }}" title="Code Review" aria-label="Code Review">✕</a>
+
+      <span class="terminal-gap" aria-hidden="true"></span>
+
+      <!-- Group 2 (Enhancements) -->
+      <a class="terminal-button minimize" href="{{ '/enhancements/software-design/' | relative_url }}" title="Enhancement 1 — Software Design">_</a>
+      <a class="terminal-button maximize" href="{{ '/enhancements/algorithms-data-structures/' | relative_url }}" title="Enhancement 2 — Algorithms & Data Structures">▢</a>
+      <a class="terminal-button close" href="{{ '/enhancements/databases/' | relative_url }}" title="Enhancement 3 — Databases">✕</a>
+    </nav>
   </header>
 
-  <!-- ===== MAIN CONTENT ===== -->
-  <main class="page-wrap">
-    <section>
-      <h2 id="typed-text">Welcome To My Software <br> Development ePortfolio</h2>
-      <p class="intro-text">
-        Welcome! I’m a web developer and e-commerce specialist passionate about creating
-        fast, beautiful, and functional websites. Here you’ll find my projects, skills,
-        and experience in building modern, responsive solutions for clients and personal work.
-      </p>
-       <h2>Featured Projects</h2>
-      <p>
-        Explore my latest work, from full-stack web applications to custom WordPress
-        e-commerce stores. Each project reflects problem-solving, attention to detail,
-        and a drive for excellence.
-      </p>
+  <!-- =========================
+       MAIN CONTENT
+       ========================= -->
+  <main class="page-wrap" id="main">
+    <h1 class="site-title">Welcome To My Software Development ePortfolio</h1>
+    <p class="intro-text">
+      Welcome! I’m a web developer and e-commerce specialist passionate about fast, clean, and functional builds.
+      Jump into my enhancements, code review, and self-assessment below.
+    </p>
+
+    <!-- Program window with NORMAL (light) content background for readability -->
+    <section class="terminal-window">
+      <div class="terminal-header">
+        <span>Professional Self-Assessment</span>
+        <div class="terminal-buttons">
+          <span class="terminal-button minimize">_</span>
+          <span class="terminal-button maximize">▢</span>
+          <span class="terminal-button close">✕</span>
+        </div>
+      </div>
+
+      <div class="program-body">
+        <!-- Paste your actual self-assessment text here -->
+        <h2>Overview</h2>
+        <p>
+          This section uses a normal light background with dark text so long-form writing is easy to read, while
+          the window chrome keeps your retro styling consistent.
+        </p>
+        <p>
+          Add more sections as needed, or duplicate this entire <code>.terminal-window</code> block for additional windows.
+        </p>
+      </div>
+
+      <div class="status-bar">Ready</div>
     </section>
   </main>
-    <footer class="site-footer">
-      <div class="footer-window">
-        <div class="footer-header"> 
-          <span>System Message</span>
-          <div class="footer-content">
-            <code>
-              Python 3.11.4 (tags/v3.11.4)  
-              >>> &copy; 2025 Alysha Pursley — Debugged my code, still working on my life..!
-              >>> This project is fully responsive… to snacks, naps, and coffee breaks. Guaranteed 97% bug-free (the other 3% are features)
-              >>> If something’s broken, just know it was working perfectly as of <b><em>August 9, 2025</em></b>. Probably.
-              >>> Thanks for checking out my portfolio!
-            </code>
-          </div>
-        <div class="footer-status-bar">Ready</div>
+
+  <!-- =========================
+       FOOTER TERMINAL WINDOW
+       ========================= -->
+  <footer class="site-footer">
+    <div class="footer-window">
+      <div class="footer-header">System Message</div>
+      <div class="footer-content">
+        <code>
+Python 3.11.4 (tags/v3.11.4)
+© 2025 Alysha Pursley — Debugged my code, still working on my life..!
+This project is fully responsive… to snacks, naps, and coffee breaks.
+If something’s broken, it was working perfectly as of <b><em>August 9, 2025</em></b>.
+        </code>
       </div>
-    </footer>
-  </body>
+      <div class="footer-status-bar">Ready</div>
+    </div>
+  </footer>
+
+</body>
 </html>
